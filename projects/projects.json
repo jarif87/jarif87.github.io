@@ -1,0 +1,229 @@
+[
+  {
+    "name": "Galactic-Assistant-QuasarBot",
+    "desc": "Deployed on Hugging Face Spaces, Galactic Assistant QuasarBot integrates LLM and generative AI for seamless access and interaction. Utilizing Streamlit, ask any question to receive concise and accurate solutions instantly.",
+    "category": "LLMs",
+    "links": {
+
+      "code": "https://github.com/jarif87/Galactic-Assistant-QuasarBot"
+    }
+  },
+  {
+    "name": "Brain Tumor Classifier and Treatment Advisor",
+    "desc": "Introducing Brain Tumor Classifier and Treatment Advisor, powered by generative AI and LLM models. This project utilizes Streamlit for a user-friendly interface where users can upload images to receive automatic tumor classification and detailed diagnostic information. Get personalized treatment recommendations and next steps based on the image analysis.",
+    
+    "category": "LLMs",
+    "links": {
+      
+      "code": "https://github.com/jarif87/Brain-Tumor-Classifier-and-Treatment-Advisor"
+    }
+  },
+  {
+    "name": "Electrocardiogram Analysis Insights into Heart Health",
+    "desc": "Upload an ECG image to receive detailed patient information and diagnosis using LLM and generative AI through Streamlit. The image, along with comprehensive diagnosis details, will be displayed, providing insights into heart health",
+    "category": "LLMs",
+    "links": {
+      
+      "code": "https://github.com/jarif87/Electrocardiogram-Analysis-Insights-into-Heart-Health"
+    }
+  },
+  {
+    "name": "HealthPredict AI-Powered Disease Forecasting and Medical Aid System",
+    "desc": "Enter your disease symptoms to receive accurate disease predictions and detailed diagnostic suggestions powered by LLM and generative AI through Streamlit. Obtain comprehensive treatment recommendations based on the diagnosis. Additionally, ask any medical-related question to receive expert answers and advice.",
+  
+    "category": "LLMs",
+    "links": {
+      
+      "code": "https://github.com/jarif87/Symptoms-to-Disease-Prediction-and-Analysis-System"
+    }
+  },
+  {
+    "name": "Geospatial Semantic Search and Interactive Map Display Tool",
+    "desc": "Introducing Geospatial Semantic Search and Interactive Map Display Tool, deployed on Hugging Face Spaces. Enter a location to visualize its exact position on a map using Streamlit and Hugging Face models.",
+    "category":"Huggingface transformer Models",
+    "links": {
+     
+      "code": "https://github.com/jarif87/Geospatial-Semantic-Search-and-Interactive-Map-Display-Tool"
+    }
+  },
+  {
+    "name": "Streamcraft Conversational AI Assistant",
+    "desc": "Introducing StreamCraft Conversational AI Assistant, a chatbot powered by LLM and generative AI.Engage in natural conversations with this deployed chatbot on the Streamlit website.",
+   
+    "category": "LLMs",
+    "links": {
+      
+      "code": "https://github.com/jarif87/StreamCraft-Conversational-AI-Assistant"
+    }
+  },
+  {
+    "name": "Sherlock Holmes Text Generator",
+    "desc": "Introducing Sherlock Holmes Text Generator, deployed in production using RNN for predicting the next word. Utilizing Gradio in Hugging Face Spaces, this tool generates Sherlock Holmes-style text interactively.",
+    
+    "category": "RNN",
+    "links": {
+      
+      "code": "https://github.com/jarif87/Consulting-Lexicographer-Holmes-Word-Predictor"
+    }
+  },
+  {
+    "name": "Crop Disease Identification",
+    "desc": "Explore Crop Disease Identification, where I utilize fastai to classify crop diseases with high accuracy.The model is deployed on Hugging Face Spaces with Gradio, enabling easy access and usage for anyone interested in crop disease classification",
+    
+    "category": "FASTAI",
+    "links": {
+      
+      "code": "https://github.com/jarif87/Crop-Disease-Identification_codeclause"
+    }
+  },
+  {
+    "name": "Text Summerization",
+    "desc": "Text summarization models developed using BLURR and Hugging Face transformers (distilbartcnn-6-6, distilbart-cnn-12-6, and facebook/bart-large-cnn) have been fine-tuned and deployed on HuggingFace. They demonstrate high performance in accuracy, precision, recall, and F1 score for generating accurate summaries of input text",
+    
+    "category": "FASTAI,BLURR",
+    "links": {
+      
+      "code": "https://github.com/jarif87/Text-Summarizer"
+    }
+  },
+  {
+    "name": "Movie, TVshow Genre Classification",
+    "desc": "Using Python and Selenium, I scraped movie and TV show data from a website. With BLURR, Fastai,and Hugging Face Transformers, I developed a multi-label genre classification model. Deployed on Hugging Face Spaces and Render, users can input data to receive instant genre predictions,showcasing efficient web scraping, NLP, and deployment techniques for real-world applications.",
+   
+    "category": "NLP",
+    "links": {
+     
+      "code": "https://github.com/jarif87/Movie_Tvshow_Genre_Classification"
+    }
+  },
+  {
+    "name": "Fruit Recognizer",
+    "desc": "I utilized Fastai and ResNet-50 to create a fruit recognition model. Data collected online was used for training, and the model was deployed on Hugging Face Spaces for easy integration into applications.This deployment improves fruit classification accessibility for agricultural and dietary purposes",
+    
+    "category": "FASTAI",
+    "links": {
+     
+      "code": "https://github.com/jarif87/Fruit-Recognizer"
+    }
+  },
+  {
+    "name": "Pokelnsights",
+    "desc": "Scraped Pokémon data using Python and Selenium, then visualized it with Tableau for insightful analysis",
+    
+    "category": "Data Analysis",
+    "links": {
+      
+      "code": "https://github.com/jarif87/PokeInsights"
+    }
+  },
+  {
+    "name": "Bangla and English Fake News Detection Using Deep Learning",
+    "desc": "This project builds a powerful fake news detection system for Bangla and English using LSTM, GRU,BI-LSTM, and DistilBERT Transformer models. It employs GloVe, Word2Vec, and one-hot vectors to capture semantic meanings, aiming to improve accuracy in identifying fake news across languages and combat misinformation effectively",
+  
+    "category": "Deep Learning",
+    "links": {
+      
+      "code": "https://github.com/jarif87/Bangla_English-Fake-News-Detection"
+    }
+  },
+  {
+    "name": "Urban Address Numeral Recognition Street View",
+    "desc": "This project harnesses Convolutional Neural Networks (CNNs) to precisely predict house number digits from street view images. The aim is to advance the model's accuracy in recognizing and categorizing house number digits, thereby enhancing the efficiency of address identification systems.",
+    
+    "category": "CNNs",
+    "links": {
+     
+      "code": "https://www.kaggle.com/code/sadikaljarif/urban-address-numeral-recognition-street-view"
+    }
+  },
+  {
+    "name": "GoogleNet Plant Disease Detect & Classify",
+    "desc": "Using GoogLeNet, a robust convolutional neural network, this project focuses on accurately classifying plant diseases to distinguish between healthy and diseased leaves. The model's evaluation includes comprehensive metrics such as ROC AUC, precision-recall curves, Cohen's Kappa score, log loss, confusion matrix, classification report, and average Brier score.",
+    
+    "category": "Deep Learning",
+    "links": {
+      
+      "code": "https://www.kaggle.com/code/sadikaljarif/googlenet-plant-disease-detect-classify"
+    }
+  },
+  {
+    "name": "Disaster Response Prediction Leveraging XLNet",
+    "desc": "This project uses the XLNet model in TensorFlow to predict disaster and non-disaster tweets with 81% accuracy. It assesses performance with metrics like ROC curve, precision-recall curve, Cohen's Kappa score, Matthews correlation coefficient, log loss, confusion matrix, and classification report,aiming to create a robust tweet classification system.",
+    
+    "category": "Huggingface transformer Models",
+    "links": {
+      
+      "code": "https://www.kaggle.com/code/sadikaljarif/disaster-response-prediction-leveraging-xlnet"
+    }
+  },
+  {
+    "name": "Enhanced Spam Detection Using ALBERT",
+    "desc": "This project uses the ALBERT transformer model in TensorFlow for robust spam detection, achieving 99% accuracy with stop words and 98% without. It explores data preprocessing effects and analyzes performance using metrics like confusion matrix, classification report, Cohen's Kappa score, ROC curve, precision-recall curve, log loss, and Brier score loss",
+    
+    "category": "Huggingface transformer Models",
+    "links": {
+      
+      "code": "https://www.kaggle.com/code/sadikaljarif/enhanced-spam-detection-using-albert"
+    }
+  },
+  {
+    "name": "RoBERTaTweet Twitter Sentiment with RoBERTa",
+    "desc": "This project used ROBERTA in TensorFlow for Twitter sentiment analysis, achieving 96% accuracy. It focused on identifying positive sentiments and detecting racist or sexist language, evaluating performance with metrics like confusion matrix, classification report, ROC curve, precision-recall curve, and F1 score",
+    
+    "category": "Huggingface transformer Models",
+    "links": {
+      
+      "code": "https://www.kaggle.com/code/sadikaljarif/robertatweet-twitter-sentiment-with-roberta"
+    }
+  },
+  {
+    "name": "DenseNet121 Unveiling the Food-Nonfood Dichotomy",
+    "desc": "This project uses DenseNet121 to classify images as food or non-food with 95% accuracy. Evaluation metrics include ROC curve, precision-recall curve, confusion matrix, classification report, Cohen's Kappa score, Matthews correlation coefficient, ROC AUC score, log loss, and Brier score for thorough performance assessment.",
+   
+    "category": "Deep Learning,CNNs",
+    "links": {
+    
+      "code": "https://www.kaggle.com/code/sadikaljarif/densenet121-unveiling-the-food-nonfood-dichotomy"
+    }
+  },
+  {
+    "name": "A Guide to Identifying Various Dog Breeds",
+    "desc": "This guide uses ResNet50V2 to classify various dog breeds with 65% accuracy. It employs comprehensive classification metrics to ensure thorough evaluation of breed identification.",
+   
+    "category": "Deep Learning,CNNs",
+    "links": {
+     
+      "code": "https://www.kaggle.com/code/sadikaljarif/a-guide-to-identifying-various-dog-breeds"
+    }
+  },
+  {
+    "name": "Alzheimer's Stage Classifier EfficientNetB6",
+    "desc": "Using the EfficientNetB6 model, this project classifies Alzheimer's disease into five categories. It aims to accurately categorize Alzheimer's stages, evaluating performance with a confusion matrix and detailed classification report to gauge model proficiency.",
+   
+    "category": "Deep Learning,CNNs",
+    "links": {
+    
+      "code": "https://www.kaggle.com/code/sadikaljarif/alzheimer-s-stage-classifier-efficientnetb6"
+    }
+  },
+  {
+    "name": "Beer Consumption Forecasting with Machine Learning",
+    "desc": "Explore how linear regression accurately predicts beer consumption with 74% accuracy, revealing insights into factors influencing consumption patterns. This project advances understanding and forecasting capabilities in beer consumption using machine learning.",
+   
+    "category": "Deep Learning,CNNs",
+    "links": {
+      
+      "code": "https://www.kaggle.com/code/sadikaljarif/beer-consumption-forecasting-with-machine-learning"
+    }
+  },
+  {
+    "name": "Beer Consumption Forecasting with Machine Learning",
+    "desc": "Explore how linear regression accurately predicts beer consumption with 74% accuracy, revealing insights into factors influencing consumption patterns. This project advances understanding and forecasting capabilities in beer consumption using machine learning.",
+   
+    "category": "Machine Learning",
+    "links": {
+
+      "code": "https://www.kaggle.com/code/sadikaljarif/beer-consumption-forecasting-with-machine-learning"
+    }
+  }]
+ 
