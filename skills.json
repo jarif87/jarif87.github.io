@@ -207,38 +207,39 @@
         "name": "CI/CD for ML",
         "icon": "https://img.icons8.com/color/48/000000/cicd.png"
     },
-
     {
         "name": "Large Language Models (LLMs)",
+        "icon": "https://img.icons8.com/color/48/000000/ai.png",
         "details": "Using and developing applications with LLMs"
     },
     {
         "name": "Streamlit",
+        "icon": "https://img.icons8.com/color/48/000000/streamlit.png",
         "details": "Interactive web applications for ML and data science"
     },
     {
         "name": "Gradio",
+        "icon": "https://img.icons8.com/color/48/000000/gradio.png",
         "details": "Rapidly create UIs for machine learning models"
     },
     {
         "name": "Web Scraping",
-        "details": "Extracting data from websites using Python"
+        "icon": "https://img.icons8.com/color/48/000000/web-scraping.png",
+        "details": "Automate data collection from websites"
     },
     {
-        "name": "Python Flask",
-        "details": "Building web applications and APIs with Flask"
+        "name": "Pinecone",
+        "icon": "https://img.icons8.com/color/48/000000/pinecone.png",
+        "details": "Vector database for machine learning applications"
     },
     {
-        "name": "FastAPI",
-        "details": "High-performance APIs with FastAPI"
+        "name": "Qdrant",
+        "icon": "https://img.icons8.com/color/48/000000/qdrant.png",
+        "details": "Vector similarity search engine"
     },
     {
-        "name": "HTML, CSS",
-        "details": "Front-end web development"
-    },
-    {
-        "name": "JavaScript",
-        "details": "Enhancing front-end interactivity and functionality"
-    }]
-
-    
+        "name": "LangChain",
+        "icon": "https://img.icons8.com/color/48/000000/langchain.png",
+        "details": "Building applications with LLMs and data integration"
+    }
+]
