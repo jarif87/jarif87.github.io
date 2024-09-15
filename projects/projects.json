@@ -133,7 +133,7 @@
     "category": "CNNs",
     "links": {
      
-      "code": "https://www.kaggle.com/code/sadikaljarif/urban-address-numeral-recognition-street-view"
+      "code": "https://www.kaggle.com/code/evilspirit05/streetview-house-number-digit-detector"
     }
   },
   {
@@ -153,7 +153,7 @@
     "category": "Huggingface transformer Models",
     "links": {
       
-      "code": "https://www.kaggle.com/code/sadikaljarif/disaster-response-prediction-leveraging-xlnet"
+      "code": "https://www.kaggle.com/code/evilspirit05/disaster-response-prediction-leveraging-xlnet"
     }
   },
   {
@@ -163,7 +163,7 @@
     "category": "Huggingface transformer Models",
     "links": {
       
-      "code": "https://www.kaggle.com/code/sadikaljarif/enhanced-spam-detection-using-albert"
+      "code": "https://www.kaggle.com/code/evilspirit05/enhanced-spam-detection-using-albert"
     }
   },
   {
@@ -173,7 +173,7 @@
     "category": "Huggingface transformer Models",
     "links": {
       
-      "code": "https://www.kaggle.com/code/sadikaljarif/robertatweet-twitter-sentiment-with-roberta"
+      "code": "https://www.kaggle.com/code/evilspirit05/sentiment-analysis-on-twitter-with-roberta"
     }
   },
   {
@@ -183,7 +183,7 @@
     "category": "Deep Learning,CNNs",
     "links": {
     
-      "code": "https://www.kaggle.com/code/sadikaljarif/densenet121-unveiling-the-food-nonfood-dichotomy"
+      "code": "https://www.kaggle.com/code/evilspirit05/densenet121-unveiling-the-food-nonfood-dichotomy"
     }
   },
   {
@@ -193,7 +193,7 @@
     "category": "Deep Learning,CNNs",
     "links": {
      
-      "code": "https://www.kaggle.com/code/sadikaljarif/a-guide-to-identifying-various-dog-breeds"
+      "code": "https://www.kaggle.com/code/evilspirit05/a-guide-to-identifying-various-dog-breeds"
     }
   },
   {
@@ -203,7 +203,7 @@
     "category": "Deep Learning,CNNs",
     "links": {
     
-      "code": "https://www.kaggle.com/code/sadikaljarif/alzheimer-s-stage-classifier-efficientnetb6"
+      "code": "https://www.kaggle.com/code/evilspirit05/alzheimer-s-stage-classifier-efficientnetb6"
     }
   },
   {
@@ -213,17 +213,9 @@
     "category": "Deep Learning,CNNs",
     "links": {
       
-      "code": "https://www.kaggle.com/code/sadikaljarif/beer-consumption-forecasting-with-machine-learning"
+      "code": "https://www.kaggle.com/code/evilspirit05/beerinsight-predicting-consumption-patterns"
     }
-  },
-  {
-    "name": "Beer Consumption Forecasting with Machine Learning",
-    "desc": "Explore how linear regression accurately predicts beer consumption with 74% accuracy, revealing insights into factors influencing consumption patterns. This project advances understanding and forecasting capabilities in beer consumption using machine learning.",
-   
-    "category": "Machine Learning",
-    "links": {
+  }
 
-      "code": "https://www.kaggle.com/code/sadikaljarif/beer-consumption-forecasting-with-machine-learning"
-    }
-  }]
+]
  
