@@ -264,10 +264,6 @@
         "name": "Qdrant",
         "icon": "https://img.icons8.com/color/48/000000/qdrant.png",
         "details": "Vector similarity search engine"
-    },
-    {
-        "name": "LangChain",
-        "icon": "https://img.icons8.com/color/48/000000/langchain.png",
-        "details": "Building applications with LLMs and data integration"
     }
+  
 ]
