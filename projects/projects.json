@@ -1,7 +1,7 @@
 [
   {
     "name": "Galactic-Assistant-QuasarBot",
-    "desc": "Deployed on Hugging Face Spaces, Galactic Assistant QuasarBot integrates LLM and generative AI for seamless access and interaction. Utilizing Streamlit, ask any question to receive concise and accurate solutions instantly.",
+    "desc": "Deployed on Hugging Face Spaces, Galactic Assistant QuasarBot integrates LLM and generative AI for seamless access and interaction.",
     "category": "LLMs",
     "links": {
 
@@ -78,7 +78,7 @@
   },
   {
     "name": "Text Summerization",
-    "desc": "Text summarization models developed using BLURR and Hugging Face transformers (distilbartcnn-6-6, distilbart-cnn-12-6, and facebook/bart-large-cnn) have been fine-tuned and deployed on HuggingFace. They demonstrate high performance in accuracy, precision, recall, and F1 score for generating accurate summaries of input text",
+    "desc": "Text summarization models developed using BLURR and Hugging Face transformers (distilbartcnn-6-6, distilbart-cnn-12-6, and facebook/bart-large-cnn) have been fine-tuned and deployed on HuggingFace.",
     
     "category": "FASTAI,BLURR",
     "links": {
@@ -88,7 +88,7 @@
   },
   {
     "name": "Movie, TVshow Genre Classification",
-    "desc": "Using Python and Selenium, I scraped movie and TV show data from a website. With BLURR, Fastai,and Hugging Face Transformers, I developed a multi-label genre classification model. Deployed on Hugging Face Spaces and Render, users can input data to receive instant genre predictions,showcasing efficient web scraping, NLP, and deployment techniques for real-world applications.",
+    "desc": "Using Python and Selenium, I scraped movie and TV show data from a website. With BLURR, Fastai,and Hugging Face Transformers, I developed a multi-label genre classification model.",
    
     "category": "NLP",
     "links": {
@@ -118,7 +118,7 @@
   },
   {
     "name": "Bangla and English Fake News Detection Using Deep Learning",
-    "desc": "This project builds a powerful fake news detection system for Bangla and English using LSTM, GRU,BI-LSTM, and DistilBERT Transformer models. It employs GloVe, Word2Vec, and one-hot vectors to capture semantic meanings, aiming to improve accuracy in identifying fake news across languages and combat misinformation effectively",
+    "desc": "This project builds a powerful fake news detection system for Bangla and English using LSTM, GRU,BI-LSTM, and DistilBERT Transformer models.",
   
     "category": "Deep Learning",
     "links": {
@@ -128,7 +128,7 @@
   },
   {
     "name": "Urban Address Numeral Recognition Street View",
-    "desc": "This project harnesses Convolutional Neural Networks (CNNs) to precisely predict house number digits from street view images. The aim is to advance the model's accuracy in recognizing and categorizing house number digits, thereby enhancing the efficiency of address identification systems.",
+    "desc": "This project harnesses Convolutional Neural Networks (CNNs) to precisely predict house number digits from street view images.",
     
     "category": "CNNs",
     "links": {
@@ -138,7 +138,7 @@
   },
   {
     "name": "GoogleNet Plant Disease Detect & Classify",
-    "desc": "Using GoogLeNet, a robust convolutional neural network, this project focuses on accurately classifying plant diseases to distinguish between healthy and diseased leaves. The model's evaluation includes comprehensive metrics such as ROC AUC, precision-recall curves, Cohen's Kappa score, log loss, confusion matrix, classification report, and average Brier score.",
+    "desc": "Using GoogLeNet, a robust convolutional neural network, this project focuses on accurately classifying plant diseases to distinguish between healthy and diseased leaves.",
     
     "category": "Deep Learning",
     "links": {
@@ -148,7 +148,7 @@
   },
   {
     "name": "Disaster Response Prediction Leveraging XLNet",
-    "desc": "This project uses the XLNet model in TensorFlow to predict disaster and non-disaster tweets with 81% accuracy. It assesses performance with metrics like ROC curve, precision-recall curve, Cohen's Kappa score, Matthews correlation coefficient, log loss, confusion matrix, and classification report,aiming to create a robust tweet classification system.",
+    "desc": "This project uses the XLNet model in TensorFlow to predict disaster and non-disaster tweets with 81% accuracy.",
     
     "category": "Huggingface transformer Models",
     "links": {
@@ -158,7 +158,7 @@
   },
   {
     "name": "Enhanced Spam Detection Using ALBERT",
-    "desc": "This project uses the ALBERT transformer model in TensorFlow for robust spam detection, achieving 99% accuracy with stop words and 98% without. It explores data preprocessing effects and analyzes performance using metrics like confusion matrix, classification report, Cohen's Kappa score, ROC curve, precision-recall curve, log loss, and Brier score loss",
+    "desc": "This project uses the ALBERT transformer model in TensorFlow for robust spam detection, achieving 99% accuracy with stop words and 98% without.",
     
     "category": "Huggingface transformer Models",
     "links": {
@@ -168,7 +168,7 @@
   },
   {
     "name": "RoBERTaTweet Twitter Sentiment with RoBERTa",
-    "desc": "This project used ROBERTA in TensorFlow for Twitter sentiment analysis, achieving 96% accuracy. It focused on identifying positive sentiments and detecting racist or sexist language, evaluating performance with metrics like confusion matrix, classification report, ROC curve, precision-recall curve, and F1 score",
+    "desc": "This project used ROBERTA in TensorFlow for Twitter sentiment analysis, achieving 96% accuracy.",
     
     "category": "Huggingface transformer Models",
     "links": {
@@ -178,7 +178,7 @@
   },
   {
     "name": "DenseNet121 Unveiling the Food-Nonfood Dichotomy",
-    "desc": "This project uses DenseNet121 to classify images as food or non-food with 95% accuracy. Evaluation metrics include ROC curve, precision-recall curve, confusion matrix, classification report, Cohen's Kappa score, Matthews correlation coefficient, ROC AUC score, log loss, and Brier score for thorough performance assessment.",
+    "desc": "This project uses DenseNet121 to classify images as food or non-food with 95% accuracy.",
    
     "category": "Deep Learning,CNNs",
     "links": {
@@ -188,7 +188,7 @@
   },
   {
     "name": "A Guide to Identifying Various Dog Breeds",
-    "desc": "This guide uses ResNet50V2 to classify various dog breeds with 65% accuracy. It employs comprehensive classification metrics to ensure thorough evaluation of breed identification.",
+    "desc": "This guide uses ResNet50V2 to classify various dog breeds with 65% accuracy.",
    
     "category": "Deep Learning,CNNs",
     "links": {
@@ -198,7 +198,7 @@
   },
   {
     "name": "Alzheimer's Stage Classifier EfficientNetB6",
-    "desc": "Using the EfficientNetB6 model, this project classifies Alzheimer's disease into five categories. It aims to accurately categorize Alzheimer's stages, evaluating performance with a confusion matrix and detailed classification report to gauge model proficiency.",
+    "desc": "Using the EfficientNetB6 model, this project classifies Alzheimer's disease into five categories.",
    
     "category": "Deep Learning,CNNs",
     "links": {
@@ -208,7 +208,7 @@
   },
   {
     "name": "Beer Consumption Forecasting with Machine Learning",
-    "desc": "Explore how linear regression accurately predicts beer consumption with 74% accuracy, revealing insights into factors influencing consumption patterns. This project advances understanding and forecasting capabilities in beer consumption using machine learning.",
+    "desc": "Explore how linear regression accurately predicts beer consumption with 74% accuracy, revealing insights into factors influencing consumption patterns.",
    
     "category": "Deep Learning,CNNs",
     "links": {
