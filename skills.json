@@ -1,4 +1,5 @@
 [
+
     {
         "name": "C",
         "icon": "https://img.icons8.com/color/48/000000/c-programming.png"
@@ -7,6 +8,33 @@
         "name": "Python",
         "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
     },
+    
+    {
+        "name": "Python-Flask",
+        "icon": "https://img.icons8.com/color/48/000000/flask.png",
+        "details": "Micro web framework for Python"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "https://img.icons8.com/color/48/000000/javascript.png",
+        "details": "High-level programming language for web development"
+    },
+    {
+        "name": "R",
+        "icon": "https://img.icons8.com/color/48/000000/r-project.png",
+        "details": "Programming language for statistical computing and graphics"
+    },
+    {
+        "name": "RAG (Retrieval-Augmented Generation)",
+        "icon": "https://img.icons8.com/color/48/000000/rag.png",
+        "details": "Combining retrieval systems with language models for enhanced performance"
+    },
+    {
+        "name": "LangChain",
+        "icon": "https://img.icons8.com/color/48/000000/langchain.png",
+        "details": "Building applications with LLMs and data integration"
+    },
+    
     {
         "name": "Windows 10",
         "icon": "https://img.icons8.com/color/48/000000/windows-10.png"
