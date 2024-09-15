@@ -29,7 +29,7 @@
   },
   {
     "name": "HealthPredict AI-Powered Disease Forecasting and Medical Aid System",
-    "desc": "Enter your disease symptoms to receive accurate disease predictions and detailed diagnostic suggestions powered by LLM and generative AI through Streamlit. Obtain comprehensive treatment recommendations based on the diagnosis.",
+    "desc": "Enter your disease symptoms to receive accurate disease predictions and detailed diagnostic suggestions powered by LLM and generative AI through Streamlit.",
   
     "category": "LLMs",
     "links": {
@@ -39,7 +39,7 @@
   },
   {
     "name": "Geospatial Semantic Search and Interactive Map Display Tool",
-    "desc": "Introducing Geospatial Semantic Search and Interactive Map Display Tool, deployed on Hugging Face Spaces. Enter a location to visualize its exact position on a map using Streamlit and Hugging Face models.",
+    "desc": "Introducing Geospatial Semantic Search and Interactive Map Display Tool, deployed on Hugging Face Spaces.",
     "category":"Huggingface transformer Models",
     "links": {
      
@@ -48,7 +48,7 @@
   },
   {
     "name": "Streamcraft Conversational AI Assistant",
-    "desc": "Introducing StreamCraft Conversational AI Assistant, a chatbot powered by LLM and generative AI.Engage in natural conversations with this deployed chatbot on the Streamlit website.",
+    "desc": "Introducing StreamCraft Conversational AI Assistant, a chatbot powered by LLM and generative AI.",
    
     "category": "LLMs",
     "links": {
@@ -58,7 +58,7 @@
   },
   {
     "name": "Sherlock Holmes Text Generator",
-    "desc": "Introducing Sherlock Holmes Text Generator, deployed in production using RNN for predicting the next word. Utilizing Gradio in Hugging Face Spaces, this tool generates Sherlock Holmes-style text interactively.",
+    "desc": "Introducing Sherlock Holmes Text Generator, deployed in production using RNN for predicting the next word.",
     
     "category": "RNN",
     "links": {
