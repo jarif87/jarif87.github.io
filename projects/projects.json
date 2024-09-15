@@ -10,7 +10,7 @@
   },
   {
     "name": "Brain Tumor Classifier and Treatment Advisor",
-    "desc": "Introducing Brain Tumor Classifier and Treatment Advisor, powered by generative AI and LLM models. This project utilizes Streamlit for a user-friendly interface where users can upload images to receive automatic tumor classification and detailed diagnostic information. Get personalized treatment recommendations and next steps based on the image analysis.",
+    "desc": "Introducing Brain Tumor Classifier and Treatment Advisor, powered by generative AI and LLM models.",
     
     "category": "LLMs",
     "links": {
@@ -20,7 +20,7 @@
   },
   {
     "name": "Electrocardiogram Analysis Insights into Heart Health",
-    "desc": "Upload an ECG image to receive detailed patient information and diagnosis using LLM and generative AI through Streamlit. The image, along with comprehensive diagnosis details, will be displayed, providing insights into heart health",
+    "desc": "Upload an ECG image to receive detailed patient information and diagnosis using LLM and generative AI through Streamlit.",
     "category": "LLMs",
     "links": {
       
@@ -29,7 +29,7 @@
   },
   {
     "name": "HealthPredict AI-Powered Disease Forecasting and Medical Aid System",
-    "desc": "Enter your disease symptoms to receive accurate disease predictions and detailed diagnostic suggestions powered by LLM and generative AI through Streamlit. Obtain comprehensive treatment recommendations based on the diagnosis. Additionally, ask any medical-related question to receive expert answers and advice.",
+    "desc": "Enter your disease symptoms to receive accurate disease predictions and detailed diagnostic suggestions powered by LLM and generative AI through Streamlit. Obtain comprehensive treatment recommendations based on the diagnosis.",
   
     "category": "LLMs",
     "links": {
@@ -68,7 +68,7 @@
   },
   {
     "name": "Crop Disease Identification",
-    "desc": "Explore Crop Disease Identification, where I utilize fastai to classify crop diseases with high accuracy.The model is deployed on Hugging Face Spaces with Gradio, enabling easy access and usage for anyone interested in crop disease classification",
+    "desc": "Explore Crop Disease Identification, where I utilize fastai to classify crop diseases with high accuracy.",
     
     "category": "FASTAI",
     "links": {
@@ -88,7 +88,7 @@
   },
   {
     "name": "Movie, TVshow Genre Classification",
-    "desc": "Using Python and Selenium, I scraped movie and TV show data from a website. With BLURR, Fastai,and Hugging Face Transformers, I developed a multi-label genre classification model.",
+    "desc": "Using Python and Selenium,I scraped movie and TV show data from a website. With BLURR, Fastai,and Hugging Face Transformers, I developed a multi-label genre classification model.",
    
     "category": "NLP",
     "links": {
@@ -98,7 +98,7 @@
   },
   {
     "name": "Fruit Recognizer",
-    "desc": "I utilized Fastai and ResNet-50 to create a fruit recognition model. Data collected online was used for training, and the model was deployed on Hugging Face Spaces for easy integration into applications.This deployment improves fruit classification accessibility for agricultural and dietary purposes",
+    "desc": "I utilized Fastai and ResNet-50 to create a fruit recognition model.",
     
     "category": "FASTAI",
     "links": {
