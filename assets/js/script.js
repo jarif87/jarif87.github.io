@@ -59,8 +59,8 @@ $(document).ready(function () {
         strings: ["Recurrent Neural Networks"],
         loop: false,
         typeSpeed: 50,
-        backSpeed: 25,
-        backDelay: 500,
+        backSpeed: 10,
+        backDelay: 1500,
     });
 
     // Initialize particles for Connect section
