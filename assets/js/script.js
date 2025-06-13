@@ -222,7 +222,7 @@ $(document).ready(function () {
     async function fetchData(type = "skills") {
         try {
             let response = await fetch("/skills.json");
-            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
             const data = await response.json();
             return data;
         } catch (error) {
@@ -232,28 +232,39 @@ $(document).ready(function () {
     }
 
     // Show skills
-   function showSkills(skills) {
-    let skillsContainer = document.getElementById("skillsContainer");
-    if (!skillsContainer) {
-        console.error("skillsContainer not found");
-        return;
+    function showSkills(skills) {
+        let skillsContainer = document.getElementById("skillsContainer");
+        if (!skillsContainer) {
+            console.error("skillsContainer not found in DOM. Check index.html for <div id='skillsContainer'>");
+            return;
+        }
+        if (!Array.isArray(skills) || skills.length === 0) {
+            console.error("Skills data is empty or invalid:", skills);
+            skillsContainer.innerHTML = "<p>No skills data available</p>";
+            return;
+        }
+        let skillHTML = "";
+        skills.forEach(skill => {
+            let badgeUrl = 'https://via.placeholder.com/50x20?text=Badge+Error';
+            // Valid Simple Icons logos
+            const validLogos = ['flask', 'scikit-learn', 'python', 'javascript', 'tensorflow'];
+            if (skill.logo && skill.logo !== "" && validLogos.includes(skill.logo.toLowerCase())) {
+                badgeUrl = `https://img.shields.io/badge/Skill-${encodeURIComponent(skill.name)}-${skill.color.replace('#', '')}?style=for-the-badge&logo=${encodeURIComponent(skill.logo)}&logoColor=white`;
+            } else if (skill.icon && skill.icon !== "") {
+                badgeUrl = skill.icon;
+            }
+            console.log(`Generating badge for ${skill.name || 'Unknown'}: ${badgeUrl}`);
+            skillHTML += `
+            <div class="bar">
+                <div class="info">
+                    <a href="${skill.profile_url || '#'}" target="_blank" aria-label="${skill.name || 'Skill'}">
+                        <img src="${badgeUrl}" alt="${skill.name || 'Skill'} Badge" class="skill-badge" onerror="console.error('Badge failed for ${skill.name || 'Unknown'}: ${badgeUrl}'); this.src='https://via.placeholder.com/50x20?text=Badge+Error';" onload="console.log('Badge loaded for ${skill.name || 'Unknown'}: ${badgeUrl}');" />
+                    </a>
+                </div>
+            </div>`;
+        });
+        skillsContainer.innerHTML = skillHTML;
     }
-    let skillHTML = "";
-    skills.forEach(skill => {
-        const badgeUrl = `https://img.shields.io/badge/Skill-${encodeURIComponent(skill.name)}-${skill.color.replace('#', '')}?style=for-the-badge&logo=${encodeURIComponent(skill.logo || 'default')}&logoColor=white`;
-        console.log(`Generating badge for ${skill.name}: ${badgeUrl}`);
-        skillHTML += `
-        <div class="bar">
-            <div class="info">
-                <a href="${skill.profile_url}" target="_blank" aria-label="${skill.name}">
-                    <img src="${badgeUrl}" alt="${skill.name} Badge" class="skill-badge" onerror="console.error('Badge failed for ${skill.name}: ${badgeUrl}'); this.src='https://via.placeholder.com/50x20?text=Badge+Error';" />
-                </a>
-            </div>
-        </div>`;
-    });
-    skillsContainer.innerHTML = skillHTML;
-}
-    
 
     // Show projects
     function showProjects(projects) {

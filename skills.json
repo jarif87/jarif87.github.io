@@ -89,8 +89,8 @@
         "details": "Data visualization library"
     },
     {
-        "name": "Scikit-Learn",
-        "icon": "/assets/images/Scikit.svg",
+         "name": "Scikit-Learn",
+        "icon": "https://unpkg.com/simple-icons@v9/icons/scikitlearn.svg",
         "color": "#F7931E",
         "logo": "custom",
         "profile_url": "https://scikit-learn.org/",
@@ -300,7 +300,7 @@
     {
             
         "name": "End-to-End ML",
-        "icon": "/assets/images/badges/End.svg",
+        "icon": "/assets/images/End.svg",
         "color": "#CDDC39",
         "logo": "",
         "profile_url": "https://github.com/jarif87",
