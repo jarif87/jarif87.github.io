@@ -62,8 +62,8 @@ $(document).ready(function () {
     "Reinforcement Learning",
     "Federated Learning"
   ],
-  typeSpeed: 250, // Slower typing speed (milliseconds per character)
-  backSpeed: 100, // Slower backspacing speed
+  typeSpeed: 150, // Slower typing speed (milliseconds per character)
+  backSpeed: 60, // Slower backspacing speed
   loop: true,
   startDelay: 1000, // Delay before starting
   backDelay: 3000 // Pause before backspacing
