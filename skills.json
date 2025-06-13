@@ -89,9 +89,8 @@
         "details": "Data visualization library"
     },
     {
-       
         "name": "Scikit-Learn",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
+        "icon": "/assets/icons/Scikit.svg",
         "color": "#F7931E",
         "logo": "custom",
         "profile_url": "https://scikit-learn.org/",
