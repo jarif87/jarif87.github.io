@@ -198,6 +198,9 @@ header .navbar ul li a:hover {
   gap: 1.5rem;
   min-height: 100vh;
   align-items: center;
+  visibility: visible; /* Ensure section is visible */
+  opacity: 1; /* Ensure section is fully opaque */
+  z-index: 0; /* Set base z-index */
 }
 
 .home #particles-js {
@@ -206,6 +209,7 @@ header .navbar ul li a:hover {
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: 0; /* Behind content and image */
 }
 
 .home::before {
@@ -215,6 +219,7 @@ header .navbar ul li a:hover {
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: -1; /* Behind particles and content */
 }
 
 .home .content {
@@ -519,7 +524,7 @@ header .navbar ul li a:hover {
   background: linear-gradient(to bottom, #57059e, #4a00e0);
   position: relative;
   overflow: visible;
-  z-index: 1; /* Ensure section stays above other elements */
+  z-index: 1;
 }
 
 .skills h2 {
@@ -534,22 +539,21 @@ header .navbar ul li a:hover {
   background: rgba(0, 0, 22, 0.4);
   color: #fff;
   border-radius: 1rem;
-  padding: 1.5rem;
-  width: 90%;
-  margin: auto;
-  margin-top: 2rem;
+  padding: 1.5rem 1rem; /* Reduced right padding */
+  width: 95%; /* Increased width */
+  margin: 2rem 0 2rem 2%; /* Left-aligned */
   position: static;
 }
 
 .skills .container .row {
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 5 columns */
-  gap: 0.8rem; /* Reduced gap */
+  gap: 0.5rem; /* Reduced gap */
 }
 
 .skills .container .bar {
   margin-bottom: 10px;
-  padding: 8px; /* Reduced padding */
+  padding: 8px;
   border-radius: 0.8rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background: rgba(0, 0, 22, 0.9);
@@ -567,18 +571,18 @@ header .navbar ul li a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.3rem; /* Reduced gap between badge and text */
+  gap: 0.3rem;
 }
 
 .skills .container .bar .info .skill-badge {
-  height: 20px; /* Reduced badge size */
-  width: auto; /* Maintain aspect ratio */
+  height: 20px;
+  width: auto;
   border-radius: 10px;
   vertical-align: middle;
 }
 
 .skills .container .bar .info span {
-  font-size: 1.4rem; /* Smaller font size */
+  font-size: 1.4rem;
   font-weight: 500;
   font-family: "Poppins";
   color: #fff;
@@ -586,17 +590,18 @@ header .navbar ul li a:hover {
 
 @media screen and (max-width: 600px) {
   .skills .container {
-    padding: 0.8rem;
-    width: 100%;
+    padding: 0.8rem 0.5rem; /* Reduced padding */
+    width: 98%; /* Full width */
+    margin: 1rem 0 1rem 1%; /* Minimal left margin */
   }
   .skills .container .row {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
-    gap: 0.5rem;
-    margin: 0.5rem;
-    padding: 0.5rem;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 0.3rem; /* Further reduced gap */
+    margin: 0.3rem;
+    padding: 0.3rem;
   }
   .skills .container .bar .info .skill-badge {
-    height: 18px; /* Smaller badges on mobile */
+    height: 18px;
     width: auto;
   }
   .skills .container .bar .info span {
