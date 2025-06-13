@@ -25,9 +25,9 @@
     },
     {
         "name": "Python-Flask",
-        "icon": "",
+        "icon": "https://images.seeklogo.com/logo-png/48/1/flask-logo-png_seeklogo-483739.png",
         "color": "#00CED1",
-        "logo": "flask",
+        "logo": "",
         "profile_url": "https://github.com/jarif87",
         "details": "Micro web framework for Python"
     },
