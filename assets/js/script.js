@@ -55,14 +55,19 @@ $(document).ready(function () {
     });
 
     // Typed.js effect for Hero section
-    var typed = new Typed(".typing-text", {
-        strings: ["Recurrent Neural Networks"],
-        loop: false,
-        typeSpeed: 50,
-        backSpeed: 10,
-        backDelay: 1500,
-    });
-
+  var typed = new Typed(".typing-text", {
+  strings: [
+    "Supervised Learning",
+    "Unsupervised Learning",
+    "Reinforcement Learning",
+    "Federated Learning"
+  ],
+  typeSpeed: 200, // Slower typing speed (milliseconds per character)
+  backSpeed: 100, // Slower backspacing speed
+  loop: true,
+  startDelay: 1000, // Delay before starting
+  backDelay: 2000 // Pause before backspacing
+});
     // Initialize particles for Connect section
     particlesJS('connect-particles', {
         particles: {
