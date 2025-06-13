@@ -90,9 +90,9 @@
     {
        
         "name": "Scikit-Learn",
-        "icon": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/main/doc/logos/scikit-learn-logo-small.png",
+        "icon": "",
         "color": "#F7931E",
-        "logo": "",
+        "logo": "scikit-learn",
         "profile_url": "https://scikit-learn.org/",
         "details": "Machine learning library"
 
