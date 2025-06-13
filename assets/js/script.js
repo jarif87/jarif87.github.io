@@ -55,18 +55,27 @@ $(document).ready(function () {
     });
 
     // Typed.js effect for Hero section
-  var typed = new Typed(".typing-text", {
+ var typed = new Typed(".typing-text", {
   strings: [
     "Supervised Learning",
     "Unsupervised Learning",
     "Reinforcement Learning",
     "Federated Learning"
   ],
-  typeSpeed: 500, // Slower typing speed (milliseconds per character)
-  backSpeed: 200, // Slower backspacing speed
+  typeSpeed: 300, // Very slow typing speed (milliseconds per character)
+  backSpeed: 150, // Very slow backspacing speed
   loop: true,
   startDelay: 1000, // Delay before starting
-  backDelay: 3000 // Pause before backspacing
+  backDelay: 3000, // Longer pause before backspacing
+  onStringTyped: function(arrayPos, self) {
+    document.querySelector('.typing-text').classList.add('active'); // Add active class for underline animation
+  },
+  onBegin: function(self) {
+    document.querySelector('.typing-text').classList.add('active'); // Ensure active class on start
+  },
+  onReset: function(self) {
+    document.querySelector('.typing-text').classList.remove('active'); // Remove active class when resetting
+  }
 });
     // Initialize particles for Connect section
     particlesJS('connect-particles', {

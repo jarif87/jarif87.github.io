@@ -188,6 +188,7 @@ header .navbar ul li a:hover {
   visibility: visible;
   opacity: 1;
   z-index: 0;
+  background: linear-gradient(135deg, #f7f7f7 0%, #e5ecfb 100%); /* Subtle background gradient */
 }
 
 .home #particles-js {
@@ -197,6 +198,7 @@ header .navbar ul li a:hover {
   height: 100%;
   width: 100%;
   z-index: 0;
+  opacity: 0.8; /* Slightly reduced opacity for particles */
 }
 
 .home::before {
@@ -213,6 +215,7 @@ header .navbar ul li a:hover {
   flex: 1 1 40rem;
   padding-top: 1rem;
   z-index: 1;
+  padding-left: 3rem; /* Added padding for better spacing */
 }
 
 .home .image {
@@ -222,26 +225,24 @@ header .navbar ul li a:hover {
 
 .home .image img {
   width: 70%;
-  margin-left: 6rem;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
-
-.home .image img {
-  width: 70%;
   max-width: 100%;
   height: auto;
   margin-left: 6rem;
   border-radius: 50%;
-  box-shadow: 0yseball;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.home .image img:hover {
+  transform: scale(1.05); /* Subtle hover effect for image */
 }
 
 .home .content h2 {
   font-size: 5rem;
   font-weight: 800;
   color: #002057;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Added text shadow for depth */
 }
 
 .home .content h2 span {
@@ -249,23 +250,43 @@ header .navbar ul li a:hover {
 }
 
 .home .content p {
-  font-size: 3rem;
+  font-size: 3.5rem; /* Increased font size for "i am into" */
   font-weight: 600;
   color: #000;
   padding: 1rem 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
 }
 
-
 .home .content p .typing-text {
-  font-size: 2.5rem; /* Slightly larger than the parent p tag for emphasis */
+  font-size: 3.8rem; /* Larger font size for animated text */
+  color: #2506ad; /* Blue color to match theme */
+  position: relative;
+  display: inline-block;
+}
+
+.home .content p .typing-text::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #2506ad, #ff7b00); /* Gradient underline */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.home .content p .typing-text.active::after {
+  transform: scaleX(1); /* Animate underline when typing */
 }
 
 .home .content p span {
-  color: rgb(148, 8, 8 0);
+  color: rgb(148, 8, 80); /* Fixed typo in original CSS (8 0 -> 80) */
 }
 
 .socials {
-  margin-top: 2rem; /* Reduced from 9rem due to removed button */
+  margin-top: 2rem;
 }
 
 .socials .social-icons {
@@ -287,11 +308,14 @@ header .navbar ul li a:hover {
   text-align: center;
   margin-right: 8px;
   border-radius: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transitions */
 }
 
 .social-icons a:hover {
   color: #fff;
   background-color: #0685da;
+  transform: scale(1.1); /* Subtle scale on hover */
+  box-shadow: 0 0 10px rgba(6, 133, 218, 0.5); /* Glow effect */
 }
 
 .social-icons a.github:hover { background-color: #0e0e0e; }
@@ -302,7 +326,8 @@ header .navbar ul li a:hover {
 @media (max-width: 450px) {
   .socials { margin-top: 4rem; }
   .home .image img { margin-top: -12rem; }
-  .home .content p, .home .content p span { font-size: 2.2rem; }
+  .home .content p { font-size: 2.5rem; } /* Adjusted for smaller screens */
+  .home .content p .typing-text { font-size: 2.8rem; } /* Adjusted for smaller screens */
 }
 
 /* About Section */
