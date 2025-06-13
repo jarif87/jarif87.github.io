@@ -27,7 +27,7 @@
         "name": "Python-Flask",
         "icon": "https://img.icons8.com/color/48/000000/flask.png",
         "color": "#00CED1",
-        "logo": "flask",
+        "logo": "python",
         "profile_url": "https://github.com/jarif87",
         "details": "Micro web framework for Python"
     },
@@ -89,7 +89,7 @@
     },
     {
         "name": "Scikit-Learn",
-        "icon": "https://img.icons8.com/color/48/000000/scikit-learn.png",
+        "icon": "https://e7.pngegg.com/pngimages/309/384/png-clipart-scikit-learn-python-computer-icons-scikit-machine-learning-learning-text-orange.png",
         "color": "#F7931E",
         "logo": "scikitlearn",
         "profile_url": "https://scikit-learn.org/",
@@ -296,12 +296,18 @@
         "details": "Reusing pre-trained models"
     },
     {
+      
         "name": "End-to-End ML",
-        "icon": "https://img.icons8.com/color/48/000000/end-to-end.png",
+        "icon": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*3miI8hO-ZI_Mnb0t.jpg",
         "color": "#CDDC39",
         "logo": "",
         "profile_url": "https://github.com/jarif87",
         "details": "Complete ML workflows"
+
+
+
+
+
     },
     {
         "name": "ML Production",
