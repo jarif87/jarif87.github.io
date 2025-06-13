@@ -88,12 +88,14 @@
         "details": "Data visualization library"
     },
     {
+       
         "name": "Scikit-Learn",
-        "icon": "https://e7.pngegg.com/pngimages/309/384/png-clipart-scikit-learn-python-computer-icons-scikit-machine-learning-learning-text-orange.png",
+        "icon": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/main/doc/logos/scikit-learn-logo-small.png",
         "color": "#F7931E",
-        "logo": "scikitlearn",
+        "logo": "",
         "profile_url": "https://scikit-learn.org/",
         "details": "Machine learning library"
+
     },
     {
         "name": "Seaborn",
