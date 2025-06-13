@@ -10,6 +10,7 @@ $(document).ready(function () {
         $('#menu').removeClass('fa-times');
         $('.navbar').removeClass('nav-toggle');
 
+        // Scroll top button
         if (window.scrollY > 60) {
             document.querySelector('#scroll-top').classList.add('active');
         } else {
@@ -28,12 +29,6 @@ $(document).ready(function () {
                 $('.navbar').find(`[href="#${id}"]`).addClass('active');
             }
         });
-
-        // Ensure skills section remains visible
-        $('.skills').css({
-            visibility: 'visible',
-            opacity: 1
-        });
     });
 
     // Smooth scrolling
@@ -44,7 +39,7 @@ $(document).ready(function () {
         }, 500, 'linear');
     });
 
-    // Emailjs for contact form
+    // EmailJS for contact form
     $("#contact-form").submit(function (event) {
         emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
         emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
@@ -59,27 +54,32 @@ $(document).ready(function () {
         event.preventDefault();
     });
 
-    // Typed.js effect
+    // Typed.js effect for Hero section
     var typed = new Typed(".typing-text", {
-        strings: [
-            "Supervised Learning",
-            "Regression Algorithms",
-            "Classification Algorithms",
-            "Unsupervised Learning",
-            "Clustering",
-            "Anomaly Detection",
-            "Artificial Neural Networks (ANNs)",
-            "Convolutional Neural Networks (CNNs)",
-            "Recurrent Neural Networks (RNNs)",
-            "Transformer Models",
-            "Transfer Learning",
-            "MLOps Concepts",
-            "Large Language Models (LLMs)"
-        ],
-        loop: true,
+        strings: ["Recurrent Neural Networks"],
+        loop: false,
         typeSpeed: 50,
         backSpeed: 25,
         backDelay: 500,
+    });
+
+    // Initialize particles for Connect section
+    particlesJS('connect-particles', {
+        particles: {
+            number: { value: 50, density: { enable: true, value_area: 800 } },
+            color: { value: '#ffae00' },
+            shape: { type: 'circle' },
+            opacity: { value: 0.5, random: true },
+            size: { value: 3, random: true },
+            line_linked: { enable: true, distance: 150, color: '#ffd900', opacity: 0.4, width: 1 },
+            move: { enable: true, speed: 2, direction: 'none', random: true, straight: false, out_mode: 'out' }
+        },
+        interactivity: {
+            detect_on: 'canvas',
+            events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true },
+            modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+        },
+        retina_detect: true
     });
 
     // Projects data
@@ -188,7 +188,7 @@ $(document).ready(function () {
         },
         {
             name: "RoBERTaTweet Twitter Sentiment with RoBERTa",
-            desc: "This project used ROBERTA in TensorFlow for Twitter sentiment analysis, achieving 96% accuracy.",
+            desc: "This project used ROBERTa in TensorFlow for Twitter sentiment analysis, achieving 96% accuracy.",
             category: "Huggingface transformer Models",
             links: { code: "https://www.kaggle.com/code/evilspirit05/sentiment-analysis-on-twitter-with-roberta" }
         },
@@ -222,7 +222,10 @@ $(document).ready(function () {
     async function fetchData(type = "skills") {
         try {
             let response = await fetch("/skills.json");
-            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            if (!response.ok) {
+                console.error(`HTTP ${response.status}: Failed to fetch skills.json`);
+                return [];
+            }
             const data = await response.json();
             return data;
         } catch (error) {
@@ -232,32 +235,34 @@ $(document).ready(function () {
     }
 
     // Show skills
-   function showSkills(skills) {
-    let skillsContainer = document.getElementById("skillsContainer");
-    if (!skillsContainer) {
-        console.error("skillsContainer not found");
-        return;
+    function showSkills(skills) {
+        let skillsContainer = document.getElementById("skillsContainer");
+        if (!skillsContainer) {
+            console.error("skillsContainer not found");
+            return;
+        }
+        let skillHTML = "";
+        skills.forEach(skill => {
+            const badgeUrl = `https://img.shields.io/badge/Skill-${encodeURIComponent(skill.name)}-${skill.color.replace('#', '')}?style=for-the-badge&logo=${encodeURIComponent(skill.logo || 'default')}&logoColor=white`;
+            skillHTML += `
+            <div class="bar">
+                <div class="info">
+                    <a href="${skill.profile_url}" target="_blank" aria-label="${skill.name}">
+                        <img src="${badgeUrl}" alt="${skill.name} Badge" class="skill-badge" onerror="this.src='https://via.placeholder.com/50x20?text=Badge+Error'; console.error('Badge failed for ${skill.name}: ${badgeUrl}');" />
+                    </a>
+                </div>
+            </div>`;
+        });
+        skillsContainer.innerHTML = skillHTML;
     }
-    let skillHTML = "";
-    skills.forEach(skill => {
-        const badgeUrl = `https://img.shields.io/badge/Skill-${encodeURIComponent(skill.name)}-${skill.color.replace('#', '')}?style=for-the-badge&logo=${encodeURIComponent(skill.logo || 'default')}&logoColor=white`;
-        console.log(`Generating badge for ${skill.name}: ${badgeUrl}`);
-        skillHTML += `
-        <div class="bar">
-            <div class="info">
-                <a href="${skill.profile_url}" target="_blank" aria-label="${skill.name}">
-                    <img src="${badgeUrl}" alt="${skill.name} Badge" class="skill-badge" onerror="console.error('Badge failed for ${skill.name}: ${badgeUrl}'); this.src='https://via.placeholder.com/50x20?text=Badge+Error';" />
-                </a>
-            </div>
-        </div>`;
-    });
-    skillsContainer.innerHTML = skillHTML;
-}
-    
 
     // Show projects
     function showProjects(projects) {
         let projectsContainer = document.querySelector("#work .box-container");
+        if (!projectsContainer) {
+            console.error("projectsContainer not found");
+            return;
+        }
         let projectHTML = "";
         projects.slice(0, 6).forEach(project => {
             projectHTML += `
@@ -301,6 +306,9 @@ $(document).ready(function () {
 
     // Load skills
     fetchData().then(data => {
+        if (data.length === 0) {
+            console.warn("No skills data loaded. Check skills.json path or content.");
+        }
         showSkills(data);
     });
 
@@ -318,14 +326,13 @@ $(document).ready(function () {
     /* SCROLL HOME */
     srtop.reveal('.home .content h3', { delay: 200 });
     srtop.reveal('.home .content p', { delay: 200 });
-    srtop.reveal('.home .content .btn', { delay: 200 });
     srtop.reveal('.home .image', { delay: 400 });
     srtop.reveal('.home .linkedin', { interval: 600 });
     srtop.reveal('.home .github', { interval: 800 });
     srtop.reveal('.home .twitter', { interval: 1000 });
     srtop.reveal('.home .telegram', { interval: 600 });
     srtop.reveal('.home .instagram', { interval: 600 });
-    srtop.reveal('.home .dev', { interval: 600 });
+    srtop.reveal('.home .facebook', { interval: 600 }); // Added for Facebook icon
 
     /* SCROLL ABOUT */
     srtop.reveal('.about .content h3', { delay: 200 });
@@ -351,6 +358,11 @@ $(document).ready(function () {
     /* SCROLL CONTACT */
     srtop.reveal('.contact .container', { delay: 400 });
     srtop.reveal('.contact .container .form-group', { delay: 400 });
+
+    /* SCROLL CONNECT */
+    srtop.reveal('.connect .box-container', { delay: 200 });
+    srtop.reveal('.connect .box', { interval: 200 });
+    srtop.reveal('.connect .credit', { delay: 400 });
 });
 
 // Visibility change
@@ -392,4 +404,4 @@ var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     s1.charset = 'UTF-8';
     s1.setAttribute('crossorigin', '*');
     s0.parentNode.insertBefore(s1, s0);
-})(); 
+})();
