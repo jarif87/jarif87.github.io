@@ -89,10 +89,10 @@
         "details": "Data visualization library"
     },
     {
-         "name": "Scikit-Learn",
-        "icon": "https://unpkg.com/simple-icons@v9/icons/scikitlearn.svg",
+        "name": "Scikit-Learn",
+        "icon": "https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png",
         "color": "#F7931E",
-        "logo": "custom",
+        "logo": "",
         "profile_url": "https://scikit-learn.org/",
         "details": "Machine learning library"
 
