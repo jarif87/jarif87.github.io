@@ -28,6 +28,12 @@ $(document).ready(function () {
                 $('.navbar').find(`[href="#${id}"]`).addClass('active');
             }
         });
+
+        // Ensure skills section remains visible
+        $('.skills').css({
+            visibility: 'visible',
+            opacity: 1
+        });
     });
 
     // Smooth scrolling
