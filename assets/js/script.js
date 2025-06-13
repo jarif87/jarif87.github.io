@@ -62,11 +62,11 @@ $(document).ready(function () {
     "Reinforcement Learning",
     "Federated Learning"
   ],
-  typeSpeed: 200, // Slower typing speed (milliseconds per character)
-  backSpeed: 100, // Slower backspacing speed
+  typeSpeed: 500, // Slower typing speed (milliseconds per character)
+  backSpeed: 200, // Slower backspacing speed
   loop: true,
   startDelay: 1000, // Delay before starting
-  backDelay: 2000 // Pause before backspacing
+  backDelay: 3000 // Pause before backspacing
 });
     // Initialize particles for Connect section
     particlesJS('connect-particles', {
