@@ -299,13 +299,12 @@
     },
     {
             
-        "name": "End-to-End ML",
-        "icon": "/assets/images/End.svg",
-        "color": "#CDDC39",
-        "logo": "",
-        "profile_url": "https://github.com/jarif87",
-        "details": "Complete ML workflows"
-
+    "name": "End-to-End ML",
+    "icon": "https://cdn-icons-png.flaticon.com/512/2819/2819194.png",
+    "color": "#CDDC39",
+    "logo": "",
+    "profile_url": "https://github.com/jarif87",
+    "details": "Complete ML workflows"
 
 
     },
