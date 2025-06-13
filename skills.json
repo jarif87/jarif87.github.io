@@ -24,12 +24,13 @@
         "details": "High-level programming language"
     },
     {
-        "name": "Python-Flask",
-        "icon": "https://images.seeklogo.com/logo-png/48/1/flask-logo-png_seeklogo-483739.png",
+         "name": "Flask",
+        "icon": "https://img.shields.io/badge/Flask-%2300CED1.svg?style=for-the-badge&logo=flask&logoColor=white",
         "color": "#00CED1",
-        "logo": "",
+        "logo": "flask",
         "profile_url": "https://github.com/jarif87",
         "details": "Micro web framework for Python"
+ 
     },
     {
         "name": "JavaScript",
@@ -90,9 +91,9 @@
     {
        
         "name": "Scikit-Learn",
-        "icon": "",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
         "color": "#F7931E",
-        "logo": "scikit-learn",
+        "logo": "custom",
         "profile_url": "https://scikit-learn.org/",
         "details": "Machine learning library"
 
@@ -298,15 +299,13 @@
         "details": "Reusing pre-trained models"
     },
     {
-      
+            
         "name": "End-to-End ML",
-        "icon": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*3miI8hO-ZI_Mnb0t.jpg",
+        "icon": "/assets/images/badges/end-to-end-ml-badge.svg",
         "color": "#CDDC39",
         "logo": "",
         "profile_url": "https://github.com/jarif87",
         "details": "Complete ML workflows"
-
-
 
 
 
