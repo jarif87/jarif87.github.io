@@ -90,7 +90,7 @@
     },
     {
         "name": "Scikit-Learn",
-        "icon": "/assets/icons/Scikit.svg",
+        "icon": "/assets/images/Scikit.svg",
         "color": "#F7931E",
         "logo": "custom",
         "profile_url": "https://scikit-learn.org/",
