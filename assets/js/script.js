@@ -214,21 +214,33 @@ $(document).ready(function () {
 
     // Fetch skills data
     async function fetchData(type = "skills") {
-        let response = await fetch("/skills.json");
-        const data = await response.json();
-        return data;
+        try {
+            let response = await fetch("/skills.json");
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error("Failed to fetch skills.json:", error);
+            return [];
+        }
     }
 
     // Show skills
     function showSkills(skills) {
         let skillsContainer = document.getElementById("skillsContainer");
+        if (!skillsContainer) {
+            console.error("skillsContainer not found");
+            return;
+        }
         let skillHTML = "";
         skills.forEach(skill => {
+            const badgeUrl = `https://img.shields.io/badge/Skill-${encodeURIComponent(skill.name)}-${skill.color.replace('#', '')}?style=for-the-badge&logo=${skill.logo || 'default'}&logoColor=white`;
             skillHTML += `
             <div class="bar">
                 <div class="info">
-                    <img src=${skill.icon} alt="skill" />
-                    <span>${skill.name}</span>
+                    <a href="${skill.profile_url}" target="_blank" aria-label="${skill.name}">
+                        <img src="${badgeUrl}" alt="${skill.name} Badge" class="skill-badge" />
+                    </a>
                 </div>
             </div>`;
         });
