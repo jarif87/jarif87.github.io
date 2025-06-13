@@ -232,26 +232,28 @@ $(document).ready(function () {
     }
 
     // Show skills
-    function showSkills(skills) {
-        let skillsContainer = document.getElementById("skillsContainer");
-        if (!skillsContainer) {
-            console.error("skillsContainer not found");
-            return;
-        }
-        let skillHTML = "";
-        skills.forEach(skill => {
-            const badgeUrl = `https://img.shields.io/badge/Skill-${encodeURIComponent(skill.name)}-${skill.color.replace('#', '')}?style=for-the-badge&logo=${skill.logo || 'default'}&logoColor=white`;
-            skillHTML += `
-            <div class="bar">
-                <div class="info">
-                    <a href="${skill.profile_url}" target="_blank" aria-label="${skill.name}">
-                        <img src="${badgeUrl}" alt="${skill.name} Badge" class="skill-badge" />
-                    </a>
-                </div>
-            </div>`;
-        });
-        skillsContainer.innerHTML = skillHTML;
+   function showSkills(skills) {
+    let skillsContainer = document.getElementById("skillsContainer");
+    if (!skillsContainer) {
+        console.error("skillsContainer not found");
+        return;
     }
+    let skillHTML = "";
+    skills.forEach(skill => {
+        const badgeUrl = `https://img.shields.io/badge/Skill-${encodeURIComponent(skill.name)}-${skill.color.replace('#', '')}?style=for-the-badge&logo=${encodeURIComponent(skill.logo || 'default')}&logoColor=white`;
+        console.log(`Generating badge for ${skill.name}: ${badgeUrl}`);
+        skillHTML += `
+        <div class="bar">
+            <div class="info">
+                <a href="${skill.profile_url}" target="_blank" aria-label="${skill.name}">
+                    <img src="${badgeUrl}" alt="${skill.name} Badge" class="skill-badge" onerror="console.error('Badge failed for ${skill.name}: ${badgeUrl}'); this.src='https://via.placeholder.com/50x20?text=Badge+Error';" />
+                </a>
+            </div>
+        </div>`;
+    });
+    skillsContainer.innerHTML = skillHTML;
+}
+    
 
     // Show projects
     function showProjects(projects) {
