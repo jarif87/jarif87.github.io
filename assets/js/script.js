@@ -41,22 +41,24 @@ $(document).ready(function () {
 
     // EmailJS for contact form
   // Initialize EmailJS on page load
-    emailjs.init("your_user_id"); // Replace with your User ID, e.g., "user_abcdef123456"
+// Initialize EmailJS on page load
+// Initialize EmailJS on page load
+emailjs.init("5IgxZrnqzRaQtnAhg"); // Your provided Public Key
 
-    // Handle contact form submission
-    $("#contact-form").submit(function (event) {
-        event.preventDefault(); // Prevent default submission
-        console.log("Form submitted, sending via EmailJS...");
-        const form = this;
+// Handle contact form submission
+$("#contact-form").submit(function (event) {
+    event.preventDefault();
+    console.log("Form submitted, sending via EmailJS...");
+    const form = this;
 
-        emailjs.sendForm('your_service_id', 'your_template_id', form)
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                form.reset();
-                alert("Form Submitted Successfully!");
-            }, function (error) {
-                console.error('FAILED...', error);
-                alert("Failed to send message: " + JSON.stringify(error));
+    emailjs.sendForm('your_service_id', 'your_template_id', form)
+        .then(function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+            form.reset();
+            alert("Form Submitted Successfully!");
+        }, function (error) {
+            console.error('FAILED...', error);
+            alert("Failed to send message: " + JSON.stringify(error));
         });
 });
 
