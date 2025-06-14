@@ -46,12 +46,18 @@ $(document).ready(function () {
 emailjs.init("5IgxZrnqzRaQtnAhg"); // Your provided Public Key
 
 // Handle contact form submission
+// Initialize EmailJS with your public key
+emailjs.init("cmxo1-ZrPBxZifeuM");  // Your actual EmailJS public key
+
+// Handle form submission
 $("#contact-form").submit(function (event) {
     event.preventDefault();
     console.log("Form submitted, sending via EmailJS...");
+
     const form = this;
 
-    emailjs.sendForm('your_service_id', 'your_template_id', form)
+    // Send email using the correct service and template IDs
+    emailjs.sendForm('service_3dl402w', 'template_zqi103p', form)
         .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
             form.reset();
@@ -61,6 +67,7 @@ $("#contact-form").submit(function (event) {
             alert("Failed to send message: " + JSON.stringify(error));
         });
 });
+
 
     // Typed.js effect for Hero section
     var typed = new Typed(".typing-text", {
