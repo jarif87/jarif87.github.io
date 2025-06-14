@@ -40,34 +40,37 @@ $(document).ready(function () {
     });
 
     // EmailJS for contact form
+    emailjs.init("your_user_id"); // Replace with your User ID, e.g., "user_abcdef123456"
     $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
+        event.preventDefault(); // Prevent default submission
+        const form = this;
+
+        emailjs.sendForm('your_service_id', 'your_template_id', form)
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
+                form.reset();
+                alert("Form Submitted Successfully!");
             }, function (error) {
                 console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
+                alert("Failed to send message: " + JSON.stringify(error));
             });
-        event.preventDefault();
     });
 
     // Typed.js effect for Hero section
-  var typed = new Typed(".typing-text", {
-  strings: [
-    "Supervised Learning",
-    "Unsupervised Learning",
-    "Reinforcement Learning",
-    "Federated Learning"
-  ],
-  typeSpeed: 150, // Slower typing speed (milliseconds per character)
-  backSpeed: 60, // Slower backspacing speed
-  loop: true,
-  startDelay: 1000, // Delay before starting
-  backDelay: 3000 // Pause before backspacing
-});
+    var typed = new Typed(".typing-text", {
+        strings: [
+            "Supervised Learning",
+            "Unsupervised Learning",
+            "Reinforcement Learning",
+            "Federated Learning"
+        ],
+        typeSpeed: 150,
+        backSpeed: 60,
+        loop: true,
+        startDelay: 1000,
+        backDelay: 3000
+    });
+
     // Initialize particles for Connect section
     particlesJS('connect-particles', {
         particles: {
@@ -337,7 +340,7 @@ $(document).ready(function () {
     srtop.reveal('.home .twitter', { interval: 1000 });
     srtop.reveal('.home .telegram', { interval: 600 });
     srtop.reveal('.home .instagram', { interval: 600 });
-    srtop.reveal('.home .facebook', { interval: 600 }); // Added for Facebook icon
+    srtop.reveal('.home .facebook', { interval: 600 });
 
     /* SCROLL ABOUT */
     srtop.reveal('.about .content h3', { delay: 200 });
@@ -399,4 +402,3 @@ document.onkeydown = function (e) {
         return false;
     }
 };
-
