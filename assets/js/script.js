@@ -40,9 +40,13 @@ $(document).ready(function () {
     });
 
     // EmailJS for contact form
+  // Initialize EmailJS on page load
     emailjs.init("your_user_id"); // Replace with your User ID, e.g., "user_abcdef123456"
+
+    // Handle contact form submission
     $("#contact-form").submit(function (event) {
         event.preventDefault(); // Prevent default submission
+        console.log("Form submitted, sending via EmailJS...");
         const form = this;
 
         emailjs.sendForm('your_service_id', 'your_template_id', form)
@@ -51,10 +55,10 @@ $(document).ready(function () {
                 form.reset();
                 alert("Form Submitted Successfully!");
             }, function (error) {
-                console.log('FAILED...', error);
+                console.error('FAILED...', error);
                 alert("Failed to send message: " + JSON.stringify(error));
-            });
-    });
+        });
+});
 
     // Typed.js effect for Hero section
     var typed = new Typed(".typing-text", {
