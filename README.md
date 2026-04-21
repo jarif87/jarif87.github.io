@@ -148,7 +148,7 @@ E:.
 - **LinkedIn**: [Sadik Al Jarif](https://www.linkedin.com/in/sadik-al-jarif-3033351a6/)
 - **GitHub**: [jarif87](https://github.com/jarif87)
 - **X**: [@jarif84112354](https://x.com/jarif84112354)
-- **Telegram**: [Dark_soul_0088](https://t.me/Dark_soul_0088)
+
 
 Feel free to reach out for collaboration, feedback, or inquiries!
 
