@@ -1,57 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Sadik Al Jarif, portfolio, projects, Data Science, Machine Learning, Deep Learning, LLMs, NLP, Computer Vision">
-    <meta name="description" content="Explore the stunning projects of Sadik Al Jarif, a Data Scientist and Machine Learning Engineer specializing in Deep Learning, LLMs, and more.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Sadik Al Jarif, portfolio, projects, Data Science, Machine Learning, Deep Learning, LLMs, NLP, Computer Vision, Cybersecurity"
+    />
+    <meta
+      name="description"
+      content="Explore the professional project portfolio of Sadik Al Jarif — AI/ML Engineer and Cybersecurity Practitioner."
+    />
     <title>Projects | Sadik Al Jarif</title>
-    <!-- Google Fonts (Poppins & Montserrat) -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <!-- Navbar -->
-    <header>
-        <a href="/" class="logo"><i class="fas fa-brain"></i> Sadik Al Jarif</a>
-        <div id="menu" class="fas fa-bars" aria-label="Toggle menu"></div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="/#home">Home</a></li>
-                <li><a href="/#about">About</a></li>
-                <li><a href="/#skills">Skills</a></li>
-                <li><a href="/#education">Education</a></li>
-                <li><a href="/#work" class="active">Work</a></li>
-                <li><a href="/#experience">Experience</a></li>
-                <li><a href="/#contact">Contact</a></li>
-            </ul>
-        </nav>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="logo">
+        <i class="fas fa-brain"></i>
+        <span>Sadik Al Jarif</span>
+      </a>
+      <div id="menu" class="fas fa-bars" aria-label="Toggle menu"></div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/#home">Home</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#skills">Skills</a></li>
+          <li><a href="/#education">Education</a></li>
+          <li><a href="/#work" class="active">Work</a></li>
+          <li><a href="/#experience">Experience</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Projects Section -->
-    <section class="work" id="work">
-        <h2 class="heading">My <span>Projects</span> <i class="fas fa-laptop-code"></i></h2>
-        <div id="filters" class="button-group"></div>
-        <div class="box-container"></div>
-        <div class="backbtn">
-            <a href="/" class="btn">
-                <i class="fas fa-arrow-left"></i>
-                <span>Back to Home</span>
-            </a>
+    <main class="work" id="work">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-subtitle">Portfolio</p>
+          <h2 class="heading">Featured <span>Projects</span></h2>
+          <p class="section-desc">
+            Production-grade AI/ML systems and cybersecurity tools. Filter by
+            category below.
+          </p>
         </div>
-    </section>
 
-    <!-- Scroll Top Button -->
-    <a href="#work" class="fas fa-angle-up" id="scroll-top" aria-label="Scroll to top"></a>
+        <div
+          id="filters"
+          class="button-group"
+          role="group"
+          aria-label="Project filters"
+        ></div>
 
-    <!-- JavaScript CDNs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <div class="box-container"></div>
+
+        <div class="empty-state" style="display: none">
+          <i class="fas fa-folder-open"></i>
+          <p>No projects found in this category.</p>
+        </div>
+
+        <div class="backbtn">
+          <a href="/" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to Home</span>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Sadik Al Jarif. All rights reserved.</p>
+    </footer>
+
+    <a
+      href="#work"
+      class="fas fa-angle-up"
+      id="scroll-top"
+      aria-label="Scroll to top"
+    ></a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

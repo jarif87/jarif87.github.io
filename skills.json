@@ -1,479 +1,690 @@
 [
-    {
+  {
+    "category": "Programming Languages",
+    "description": "Core languages used across projects",
+    "skills": [
+      {
         "name": "C",
         "icon": "https://img.icons8.com/color/48/000000/c-programming.png",
         "color": "#A8B9CC",
         "logo": "c",
         "profile_url": "https://github.com/jarif87",
-        "details": "Low-level programming language"
-    },
-    {
+        "details": "General-purpose systems programming"
+      },
+      {
+        "name": "Python",
+        "icon": "https://img.icons8.com/color/48/000000/python--v1.png",
+        "color": "#3776AB",
+        "logo": "python",
+        "profile_url": "https://www.kaggle.com/evilspirit05",
+        "details": "Security tools, automation & ML scripting"
+      },
+      {
         "name": "C++",
         "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png",
         "color": "#00599C",
         "logo": "c++",
         "profile_url": "https://github.com/jarif87",
-        "details": "General-purpose programming language with object-oriented features"
-    },
-    {
-        "name": "Python",
-        "icon": "https://img.icons8.com/color/48/000000/python--v1.png",
-        "color": "#2ECC71",
-        "logo": "python",
-        "profile_url": "https://www.kaggle.com/evilspirit05",
-        "details": "High-level programming language"
-    },
-    {
-         "name": "Flask",
-        "icon": "https://img.shields.io/badge/Flask-%2300CED1.svg?style=for-the-badge&logo=flask&logoColor=white",
-        "color": "#00CED1",
-        "logo": "flask",
-        "profile_url": "https://github.com/jarif87",
-        "details": "Micro web framework for Python"
- 
-    },
-    {
+        "details": "General-purpose systems programming"
+      },
+      {
         "name": "JavaScript",
         "icon": "https://img.icons8.com/color/48/000000/javascript.png",
-        "color": "#F1C40F",
+        "color": "#F7DF1E",
         "logo": "javascript",
         "profile_url": "https://github.com/jarif87",
-        "details": "High-level programming language for web development"
-    },
-    {
+        "details": "Web development & scripting"
+      },
+      {
+        "name": "Bash",
+        "icon": "https://img.icons8.com/color/48/000000/bash.png",
+        "color": "#4EAA25",
+        "logo": "gnubash",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Shell scripting & task automation"
+      },
+      {
         "name": "R",
         "icon": "https://img.icons8.com/color/48/000000/r-project.png",
         "color": "#276DC3",
         "logo": "r",
         "profile_url": "https://github.com/jarif87",
-        "details": "Programming language for statistical computing and graphics"
-    },
-    {
-        "name": "RAG",
-        "icon": "https://img.icons8.com/color/48/000000/rag.png",
-        "color": "#9B59B6",
-        "logo": "ai",
+        "details": "Statistical computing and graphics"
+      }
+    ]
+  },
+  {
+    "category": "Cybersecurity",
+    "description": "Tools, techniques & attack frameworks",
+    "skills": [
+      {
+        "name": "Nmap",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#E24B4A",
+        "logo": "nmap",
         "profile_url": "https://github.com/jarif87",
-        "details": "Combining retrieval systems with language models for enhanced performance"
-    },
-    {
-        "name": "LangChain",
-        "icon": "https://img.icons8.com/color/48/000000/langchain.png",
-        "color": "#3498DB",
-        "logo": "ai",
+        "details": "Network discovery & security auditing"
+      },
+      {
+        "name": "Metasploit",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#E24B4A",
+        "logo": "metasploit",
         "profile_url": "https://github.com/jarif87",
-        "details": "Building applications with LLMs and data integration"
-    },
-    {
-        "name": "Pandas",
-        "icon": "https://img.icons8.com/color/48/000000/pandas.png",
-        "color": "#150458",
-        "logo": "pandas",
-        "profile_url": "https://pandas.pydata.org/",
-        "details": "Data manipulation library"
-    },
-    {
-        "name": "NumPy",
-        "icon": "https://img.icons8.com/color/48/000000/numpy.png",
-        "color": "#013243",
-        "logo": "numpy",
-        "profile_url": "https://numpy.org/",
-        "details": "Numerical computing library"
-    },
-    {
-        "name": "Matplotlib",
-        "icon": "https://img.icons8.com/ios/48/000000/matplotlib.png",
-        "color": "#11557C",
-        "logo": "matplotlib",
-        "profile_url": "https://matplotlib.org/",
-        "details": "Data visualization library"
-    },
-    {
-        "name": "Scikit-Learn",
-        "icon": "https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png",
-        "color": "#F7931E",
-        "logo": "",
-        "profile_url": "https://scikit-learn.org/",
-        "details": "Machine learning library"
+        "details": "Penetration testing framework"
+      },
+      {
+        "name": "Burp Suite",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#E24B4A",
+        "logo": "burpsuite",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Web application security testing platform"
+      },
+      {
+        "name": "Wireshark",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#1679A7",
+        "logo": "wireshark",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Network protocol analyzer"
+      },
+      {
+        "name": "Nessus",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#D85A30",
+        "logo": "tenable",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Vulnerability scanning & assessment"
+      },
+      {
+        "name": "Hydra",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#D85A30",
+        "logo": "kalilinux",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Online password cracking tool"
+      },
+      {
+        "name": "Hashcat",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#BA7517",
+        "logo": "kalilinux",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Advanced password recovery & hash cracking"
+      },
 
-    },
-    {
-        "name": "Seaborn",
-        "icon": "https://img.icons8.com/color/48/000000/seaborn.png",
-        "color": "#4C72B0",
-        "logo": "",
-        "profile_url": "https://seaborn.pydata.org/",
-        "details": "Statistical data visualization"
-    },
-    {
-        "name": "Plotly",
-        "icon": "https://img.icons8.com/color/48/000000/plotly.png",
-        "color": "#3F4F75",
-        "logo": "plotly",
-        "profile_url": "https://plotly.com/",
-        "details": "Interactive graphing library"
-    },
-    {
-        "name": "Selenium",
-        "icon": "https://img.icons8.com/color/48/000000/selenium.png",
-        "color": "#43B02A",
-        "logo": "selenium",
-        "profile_url": "https://www.selenium.dev/",
-        "details": "Web automation framework"
-    },
-    {
-        "name": "BeautifulSoup",
-        "icon": "https://img.icons8.com/ios-filled/48/000000/beautifulsoup.png",
-        "color": "#FFD700",
-        "logo": "",
-        "profile_url": "https://www.crummy.com/software/BeautifulSoup/",
-        "details": "Web scraping library"
-    },
-    {
-        "name": "Tableau",
-        "icon": "https://img.icons8.com/color/48/000000/tableau-software.png",
-        "color": "#E97627",
-        "logo": "tableau",
-        "profile_url": "https://www.tableau.com/",
-        "details": "Data visualization tool"
-    },
-    {
-        "name": "FastAI",
-        "icon": "https://img.icons8.com/ios-filled/48/000000/fastai.png",
-        "color": "#005B99",
-        "logo": "",
-        "profile_url": "https://www.fast.ai/",
-        "details": "Deep learning library"
-    },
-    {
-        "name": "HuggingFace",
-        "icon": "https://img.icons8.com/ios-filled/48/000000/hugging-face.png",
-        "color": "#FFD21E",
-        "logo": "huggingface",
-        "profile_url": "https://huggingface.co/",
-        "details": "NLP and ML models"
-    },
-    {
-        "name": "Blurr",
-        "icon": "https://img.icons8.com/ios-filled/48/000000/blurr.png",
-        "color": "#6A5ACD",
-        "logo": "",
-        "profile_url": "https://github.com/ohmeow/blurr",
-        "details": "HuggingFace wrapper for FastAI"
-    },
-    {
-        "name": "PyTorch",
-        "icon": "https://img.icons8.com/color/48/000000/pytorch.png",
-        "color": "#EE4C2C",
-        "logo": "pytorch",
-        "profile_url": "https://pytorch.org/",
-        "details": "Deep learning framework"
-    },
-    {
-        "name": "ONNX",
-        "icon": "https://img.icons8.com/ios-filled/48/000000/onnx.png",
-        "color": "#005CED",
-        "logo": "",
-        "profile_url": "https://onnx.ai/",
-        "details": "Open Neural Network Exchange"
-    },
-    {
+      {
+        "name": "Bettercap",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#1679A7",
+        "logo": "kalilinux",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Network attack & monitoring framework"
+      },
+      {
+        "name": "Ettercap",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#1679A7",
+        "logo": "kalilinux",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Man-in-the-middle attack suite"
+      },
+      {
+        "name": "Dirb",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#E24B4A",
+        "logo": "kalilinux",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Web content scanner for hidden directories"
+      },
+      {
+        "name": "WhatWeb",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#E24B4A",
+        "logo": "kalilinux",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Web application fingerprinting tool"
+      },
+      {
+        "name": "Scapy",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#1679A7",
+        "logo": "python",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Python-based packet manipulation tool"
+      },
+      {
+        "name": "Kali Linux",
+        "icon": "https://img.icons8.com/color/48/000000/linux.png",
+        "color": "#557C94",
+        "logo": "kalilinux",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Penetration testing Linux distribution"
+      },
+      {
+        "name": "SQL Injection",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#E24B4A",
+        "logo": "owasp",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Web application attack technique"
+      },
+      {
+        "name": "XSS",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#E24B4A",
+        "logo": "owasp",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Cross-Site Scripting (Reflected & Stored)"
+      },
+      {
+        "name": "CSRF",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#E24B4A",
+        "logo": "owasp",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Cross-Site Request Forgery attacks"
+      },
+      {
+        "name": "Command Injection",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#E24B4A",
+        "logo": "owasp",
+        "profile_url": "https://github.com/jarif87",
+        "details": "OS command injection via vulnerable inputs"
+      },
+      {
+        "name": "LFI / RFI",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#D85A30",
+        "logo": "owasp",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Local & Remote File Inclusion vulnerabilities"
+      },
+      {
+        "name": "XXE",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#D85A30",
+        "logo": "owasp",
+        "profile_url": "https://github.com/jarif87",
+        "details": "XML External Entity injection attacks"
+      },
+      {
+        "name": "MITM",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#1679A7",
+        "logo": "kalilinux",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Man-in-the-Middle attack techniques"
+      },
+      {
+        "name": "Privilege Escalation",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#D85A30",
+        "logo": "kalilinux",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Gaining elevated system access"
+      },
+      {
+        "name": "Threat Modeling",
+        "icon": "https://img.icons8.com/color/48/000000/security-checked.png",
+        "color": "#BA7517",
+        "logo": "owasp",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Identifying & prioritizing security threats"
+      }
+    ]
+  },
+  {
+    "category": "AI / ML",
+    "description": "Frameworks, models & architectures",
+    "skills": [
+      {
         "name": "TensorFlow",
         "icon": "https://img.icons8.com/color/48/000000/tensorflow.png",
         "color": "#FF6F00",
         "logo": "tensorflow",
         "profile_url": "https://www.tensorflow.org/",
         "details": "Machine learning framework"
-    },
-    {
+      },
+      {
         "name": "Keras",
         "icon": "https://img.icons8.com/color/48/000000/keras.png",
         "color": "#D00000",
         "logo": "keras",
         "profile_url": "https://keras.io/",
         "details": "High-level neural networks API"
-    },
-    {
-        "name": "Power BI",
-        "icon": "https://img.icons8.com/color/48/000000/power-bi.png",
-        "color": "#F2C811",
-        "logo": "powerbi",
-        "profile_url": "https://powerbi.microsoft.com/",
-        "details": "Business analytics tool"
-    },
-    {
+      },
+      {
+        "name": "PyTorch",
+        "icon": "https://img.icons8.com/color/48/000000/pytorch.png",
+        "color": "#EE4C2C",
+        "logo": "pytorch",
+        "profile_url": "https://pytorch.org/",
+        "details": "Deep learning framework"
+      },
+      {
+        "name": "FastAI",
+        "icon": "https://img.icons8.com/ios-filled/48/000000/fastai.png",
+        "color": "#005B99",
+        "logo": "fastai",
+        "profile_url": "https://www.fast.ai/",
+        "details": "Deep learning library"
+      },
+      {
+        "name": "ONNX",
+        "icon": "https://img.icons8.com/ios-filled/48/000000/onnx.png",
+        "color": "#005CED",
+        "logo": "pytorch",
+        "profile_url": "https://onnx.ai/",
+        "details": "Open Neural Network Exchange"
+      },
+      {
         "name": "OpenCV",
         "icon": "https://img.icons8.com/color/48/000000/opencv.png",
         "color": "#5C3EE8",
         "logo": "opencv",
         "profile_url": "https://opencv.org/",
         "details": "Computer vision library"
-    },
-    {
-        "name": "Supervised Learning",
-        "icon": "https://img.icons8.com/color/48/000000/supervised-learning.png",
-        "color": "#1ABC9C",
-        "logo": "",
+      },
+      {
+        "name": "HuggingFace",
+        "icon": "https://img.icons8.com/ios-filled/48/000000/hugging-face.png",
+        "color": "#FFD21E",
+        "logo": "huggingface",
+        "profile_url": "https://huggingface.co/",
+        "details": "NLP and ML models hub"
+      },
+      {
+        "name": "LangChain",
+        "icon": "https://img.icons8.com/color/48/000000/langchain.png",
+        "color": "#3498DB",
+        "logo": "langchain",
         "profile_url": "https://github.com/jarif87",
-        "details": "ML paradigm with labeled data"
-    },
-    {
-        "name": "Regression",
-        "icon": "https://img.icons8.com/color/48/000000/regression.png",
-        "color": "#E91E63",
-        "logo": "",
+        "details": "Building applications with LLMs"
+      },
+      {
+        "name": "RAG",
+        "icon": "https://img.icons8.com/color/48/000000/rag.png",
+        "color": "#9B59B6",
+        "logo": "openai",
         "profile_url": "https://github.com/jarif87",
-        "details": "Predicting continuous outcomes"
-    },
-    {
-        "name": "Classification",
-        "icon": "https://img.icons8.com/color/48/000000/classification.png",
-        "color": "#2196F3",
-        "logo": "",
+        "details": "Retrieval-Augmented Generation"
+      },
+      {
+        "name": "LLMs",
+        "icon": "https://img.icons8.com/color/48/000000/ai.png",
+        "color": "#7E57C2",
+        "logo": "openai",
         "profile_url": "https://github.com/jarif87",
-        "details": "Predicting categorical outcomes"
-    },
-    {
-        "name": "Unsupervised Learning",
-        "icon": "https://img.icons8.com/color/48/000000/unsupervised-learning.png",
-        "color": "#9C27B0",
-        "logo": "",
-        "profile_url": "https://github.com/jarif87",
-        "details": "ML paradigm with unlabeled data"
-    },
-    {
-        "name": "Clustering",
-        "icon": "https://img.icons8.com/color/48/000000/clustering.png",
-        "color": "#FF9800",
-        "logo": "",
-        "profile_url": "https://github.com/jarif87",
-        "details": "Grouping similar data points"
-    },
-    {
-        "name": "Anomaly Detection",
-        "icon": "https://img.icons8.com/color/48/000000/anomaly-detection.png",
-        "color": "#795548",
-        "logo": "",
-        "profile_url": "https://github.com/jarif87",
-        "details": "Identifying outliers in data"
-    },
-    {
-        "name": "ANNs",
-        "icon": "https://img.icons8.com/color/48/000000/ann.png",
-        "color": "#3F51B5",
-        "logo": "",
-        "profile_url": "https://github.com/jarif87",
-        "details": "Neural networks for ML"
-    },
-    {
-        "name": "CNNs",
-        "icon": "https://img.icons8.com/color/48/000000/cnn.png",
-        "color": "#009688",
-        "logo": "",
-        "profile_url": "https://github.com/jarif87",
-        "details": "Neural networks for image processing"
-    },
-    {
-        "name": "RNNs",
-        "icon": "https://img.icons8.com/color/48/000000/rnn.png",
-        "color": "#4CAF50",
-        "logo": "",
-        "profile_url": "https://github.com/jarif87",
-        "details": "Neural networks for sequential data"
-    },
-    {
+        "details": "Large Language Model development & deployment"
+      },
+      {
+        "name": "Blurr",
+        "icon": "https://img.icons8.com/ios-filled/48/000000/blurr.png",
+        "color": "#6A5ACD",
+        "logo": "huggingface",
+        "profile_url": "https://github.com/ohmeow/blurr",
+        "details": "HuggingFace wrapper for FastAI"
+      },
+      {
         "name": "Transformers",
         "icon": "https://img.icons8.com/color/48/000000/transformer.png",
         "color": "#673AB7",
-        "logo": "",
+        "logo": "huggingface",
         "profile_url": "https://github.com/jarif87",
-        "details": "Advanced NLP models"
-    },
-    {
+        "details": "Advanced NLP model architecture"
+      },
+      {
+        "name": "ANNs",
+        "icon": "https://img.icons8.com/color/48/000000/ann.png",
+        "color": "#3F51B5",
+        "logo": "tensorflow",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Artificial Neural Networks"
+      },
+      {
+        "name": "CNNs",
+        "icon": "https://img.icons8.com/color/48/000000/cnn.png",
+        "color": "#009688",
+        "logo": "tensorflow",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Convolutional Neural Networks"
+      },
+      {
+        "name": "RNNs",
+        "icon": "https://img.icons8.com/color/48/000000/rnn.png",
+        "color": "#4CAF50",
+        "logo": "tensorflow",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Recurrent Neural Networks"
+      },
+      {
         "name": "Transfer Learning",
         "icon": "https://img.icons8.com/color/48/000000/transfer-learning.png",
         "color": "#FFC107",
-        "logo": "",
+        "logo": "pytorch",
         "profile_url": "https://github.com/jarif87",
         "details": "Reusing pre-trained models"
-    },
-    {
-            
-    "name": "End-to-End ML",
-    "icon": "https://cdn-icons-png.flaticon.com/512/2819/2819194.png",
-    "color": "#CDDC39",
-    "logo": "",
-    "profile_url": "https://github.com/jarif87",
-    "details": "Complete ML workflows"
+      },
+      {
+        "name": "Reinforcement Learning",
+        "icon": "https://img.icons8.com/color/48/000000/reinforcement-learning.png",
+        "color": "#E74C3C",
+        "logo": "pytorch",
+        "profile_url": "https://github.com/jarif87",
+        "details": "ML paradigm for decision-making"
+      },
+      {
+        "name": "Supervised Learning",
+        "icon": "https://img.icons8.com/color/48/000000/supervised-learning.png",
+        "color": "#1ABC9C",
+        "logo": "scikitlearn",
+        "profile_url": "https://github.com/jarif87",
+        "details": "ML with labeled training data"
+      },
+      {
+        "name": "Unsupervised Learning",
+        "icon": "https://img.icons8.com/color/48/000000/unsupervised-learning.png",
+        "color": "#9C27B0",
+        "logo": "scikitlearn",
+        "profile_url": "https://github.com/jarif87",
+        "details": "ML with unlabeled data"
+      },
+      {
+        "name": "Anomaly Detection",
+        "icon": "https://img.icons8.com/color/48/000000/anomaly-detection.png",
+        "color": "#795548",
+        "logo": "scikitlearn",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Identifying outliers in data"
+      }
+    ]
+  },
 
+  {
+    "category": "Agentic AI",
+    "description": "Frameworks & tools for building AI agents",
+    "skills": [
+      {
+        "name": "LangGraph",
+        "icon": "https://img.icons8.com/color/48/000000/langchain.png",
+        "color": "#3498DB",
+        "logo": "langchain",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Graph-based LLM agent framework"
+      },
+      {
+        "name": "CrewAI",
+        "icon": "https://img.icons8.com/color/48/000000/ai.png",
+        "color": "#E74C3C",
+        "logo": "openai",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Multi-agent collaboration framework"
+      },
+      {
+        "name": "AutoGen",
+        "icon": "https://img.icons8.com/color/48/000000/ai.png",
+        "color": "#9B59B6",
+        "logo": "openai",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Microsoft multi-agent AI framework"
+      },
+      {
+        "name": "OpenAI Agents SDK",
+        "icon": "https://img.icons8.com/color/48/000000/ai.png",
+        "color": "#10A37F",
+        "logo": "openai",
+        "profile_url": "https://github.com/jarif87",
+        "details": "OpenAI SDK for building AI agents"
+      },
+      {
+        "name": "MCP",
+        "icon": "https://img.icons8.com/color/48/000000/api.png",
+        "color": "#FF6B6B",
+        "logo": "anthropic",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Model Context Protocol for agent tools"
+      },
+      {
+        "name": "LlamaIndex",
+        "icon": "https://img.icons8.com/color/48/000000/llama.png",
+        "color": "#7B68EE",
+        "logo": "python",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Data framework for LLM applications"
+      },
+      {
+        "name": "LoRA",
+        "icon": "https://img.icons8.com/color/48/000000/ai.png",
+        "color": "#2ECC71",
+        "logo": "huggingface",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Low-Rank Adaptation for fine-tuning LLMs"
+      }
+    ]
+  },
 
-    },
-    {
-        "name": "ML Production",
-        "icon": "https://img.icons8.com/color/48/000000/productionize.png",
-        "color": "#607D8B",
-        "logo": "",
+  {
+    "category": "Data & Visualization",
+    "description": "Analysis, databases & visual tools",
+    "skills": [
+      {
+        "name": "Pandas",
+        "icon": "https://img.icons8.com/color/48/000000/pandas.png",
+        "color": "#150458",
+        "logo": "pandas",
+        "profile_url": "https://pandas.pydata.org/",
+        "details": "Data manipulation & analysis library"
+      },
+      {
+        "name": "NumPy",
+        "icon": "https://img.icons8.com/color/48/000000/numpy.png",
+        "color": "#013243",
+        "logo": "numpy",
+        "profile_url": "https://numpy.org/",
+        "details": "Numerical computing library"
+      },
+      {
+        "name": "Matplotlib",
+        "icon": "https://img.icons8.com/ios/48/000000/matplotlib.png",
+        "color": "#11557C",
+        "logo": "matplotlib",
+        "profile_url": "https://matplotlib.org/",
+        "details": "Data visualization library"
+      },
+      {
+        "name": "Seaborn",
+        "icon": "https://img.icons8.com/color/48/000000/seaborn.png",
+        "color": "#4C72B0",
+        "logo": "python",
+        "profile_url": "https://seaborn.pydata.org/",
+        "details": "Statistical data visualization"
+      },
+      {
+        "name": "Plotly",
+        "icon": "https://img.icons8.com/color/48/000000/plotly.png",
+        "color": "#3F4F75",
+        "logo": "plotly",
+        "profile_url": "https://plotly.com/",
+        "details": "Interactive graphing library"
+      },
+      {
+        "name": "Tableau",
+        "icon": "https://img.icons8.com/color/48/000000/tableau-software.png",
+        "color": "#E97627",
+        "logo": "tableau",
+        "profile_url": "https://www.tableau.com/",
+        "details": "Business data visualization tool"
+      },
+      {
+        "name": "Power BI",
+        "icon": "https://img.icons8.com/color/48/000000/power-bi.png",
+        "color": "#F2C811",
+        "logo": "powerbi",
+        "profile_url": "https://powerbi.microsoft.com/",
+        "details": "Business analytics & reporting"
+      },
+      {
+        "name": "BeautifulSoup",
+        "icon": "https://img.icons8.com/ios-filled/48/000000/beautifulsoup.png",
+        "color": "#FFD700",
+        "logo": "python",
+        "profile_url": "https://www.crummy.com/software/BeautifulSoup/",
+        "details": "Web scraping & HTML parsing"
+      },
+      {
+        "name": "Selenium",
+        "icon": "https://img.icons8.com/color/48/000000/selenium.png",
+        "color": "#43B02A",
+        "logo": "selenium",
+        "profile_url": "https://www.selenium.dev/",
+        "details": "Web automation framework"
+      },
+      {
+        "name": "SQL",
+        "icon": "https://img.icons8.com/color/48/000000/sql.png",
+        "color": "#E67E22",
+        "logo": "mysql",
         "profile_url": "https://github.com/jarif87",
-        "details": "Deploying ML models to production"
-    },
-    {
-        "name": "Shell Scripting",
-        "icon": "https://img.icons8.com/color/48/000000/shell-script.png",
-        "color": "#37474F",
-        "logo": "linux",
+        "details": "Structured Query Language"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "https://img.icons8.com/color/48/000000/postgreesql.png",
+        "color": "#336791",
+        "logo": "postgresql",
+        "profile_url": "https://www.postgresql.org/",
+        "details": "Open-source relational database"
+      },
+      {
+        "name": "NoSQL",
+        "icon": "https://img.icons8.com/color/48/000000/nosql.png",
+        "color": "#4DB33D",
+        "logo": "mongodb",
         "profile_url": "https://github.com/jarif87",
-        "details": "Automating tasks with scripts"
-    },
-    {
-        "name": "MLOps",
-        "icon": "https://img.icons8.com/color/48/000000/mlops.png",
-        "color": "#0288D1",
-        "logo": "",
-        "profile_url": "https://github.com/jarif87",
-        "details": "Managing ML operations"
-    },
-    {
-        "name": "Automated MLOps",
-        "icon": "https://img.icons8.com/color/48/000000/fully-automated-mlops.png",
-        "color": "#D81B60",
-        "logo": "",
-        "profile_url": "https://github.com/jarif87",
-        "details": "Automated ML pipelines"
-    },
-    {
-        "name": "Data Pipelines",
-        "icon": "https://img.icons8.com/color/48/000000/data-pipeline.png",
-        "color": "#8BC34A",
-        "logo": "",
-        "profile_url": "https://github.com/jarif87",
-        "details": "Automating data workflows"
-    },
-    {
-        "name": "ML Monitoring",
-        "icon": "https://img.icons8.com/color/48/000000/ml-monitoring.png",
-        "color": "#F44336",
-        "logo": "",
-        "profile_url": "https://github.com/jarif87",
-        "details": "Monitoring ML models"
-    },
-    {
+        "details": "Non-relational database systems"
+      }
+    ]
+  },
+  {
+    "category": "Infra & Deployment",
+    "description": "MLOps, cloud, pipelines & web frameworks",
+    "skills": [
+      {
+        "name": "Pinecone",
+        "icon": "https://img.icons8.com/color/48/000000/pinecone.png",
+        "color": "#26A69A",
+        "logo": "pinecone",
+        "profile_url": "https://www.pinecone.io/",
+        "details": "Vector database for ML applications"
+      },
+      {
+        "name": "Qdrant",
+        "icon": "https://img.icons8.com/color/48/000000/qdrant.png",
+        "color": "#AB47BC",
+        "logo": "qdrant",
+        "profile_url": "https://qdrant.tech/",
+        "details": "Vector similarity search engine"
+      },
+      {
         "name": "Docker",
         "icon": "https://img.icons8.com/color/48/000000/docker.png",
         "color": "#2496ED",
         "logo": "docker",
         "profile_url": "https://www.docker.com/",
         "details": "Containerization platform"
-    },
-    {
+      },
+      {
+        "name": "MLOps",
+        "icon": "https://img.icons8.com/color/48/000000/mlops.png",
+        "color": "#0288D1",
+        "logo": "mlflow",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Managing ML operations"
+      },
+      {
         "name": "CI/CD ML",
         "icon": "https://img.icons8.com/color/48/000000/cicd.png",
         "color": "#FF5722",
         "logo": "githubactions",
         "profile_url": "https://github.com/jarif87",
-        "details": "Continuous integration/deployment for ML"
-    },
-    {
-        "name": "LLMs",
-        "icon": "https://img.icons8.com/color/48/000000/ai.png",
-        "color": "#7E57C2",
-        "logo": "ai",
+        "details": "Continuous integration & deployment for ML"
+      },
+      {
+        "name": "Data Pipelines",
+        "icon": "https://img.icons8.com/color/48/000000/data-pipeline.png",
+        "color": "#8BC34A",
+        "logo": "apacheairflow",
         "profile_url": "https://github.com/jarif87",
-        "details": "Using and developing applications with LLMs"
-    },
-    {
+        "details": "Automated data workflows"
+      },
+
+      {
+        "name": "ML Monitoring",
+        "icon": "https://img.icons8.com/color/48/000000/ml-monitoring.png",
+        "color": "#F44336",
+        "logo": "grafana",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Monitoring ML models in production"
+      },
+      {
+        "name": "Flask",
+        "icon": "https://img.shields.io/badge/Flask-%2300CED1.svg?style=for-the-badge&logo=flask&logoColor=white",
+        "color": "#00CED1",
+        "logo": "flask",
+        "profile_url": "https://github.com/jarif87",
+        "details": "Micro web framework for Python"
+      },
+      {
         "name": "Streamlit",
         "icon": "https://img.icons8.com/color/48/000000/streamlit.png",
         "color": "#FF4B4B",
         "logo": "streamlit",
         "profile_url": "https://streamlit.io/",
-        "details": "Interactive web applications for ML and data science"
-    },
-    {
+        "details": "Interactive web apps for ML"
+      },
+      {
         "name": "Gradio",
         "icon": "https://img.icons8.com/color/48/000000/gradio.png",
         "color": "#00BCD4",
-        "logo": "",
+        "logo": "gradio",
         "profile_url": "https://gradio.app/",
-        "details": "Rapidly create UIs for machine learning models"
-    },
-    {
-        "name": "Web Scraping",
-        "icon": "https://img.icons8.com/color/48/000000/web-scraping.png",
-        "color": "#8D6E63",
-        "logo": "",
+        "details": "Rapid UI creation for ML models"
+      },
+      {
+        "name": "Ubuntu",
+        "icon": "https://img.icons8.com/color/48/000000/ubuntu--v1.png",
+        "color": "#E95420",
+        "logo": "ubuntu",
         "profile_url": "https://github.com/jarif87",
-        "details": "Automate data collection from websites"
-    },
-    {
-        "name": "Pinecone",
-        "icon": "https://img.icons8.com/color/48/000000/pinecone.png",
-        "color": "#26A69A",
-        "logo": "",
-        "profile_url": "https://www.pinecone.io/",
-        "details": "Vector database for machine learning applications"
-    },
-    {
-        "name": "Qdrant",
-        "icon": "https://img.icons8.com/color/48/000000/qdrant.png",
-        "color": "#AB47BC",
-        "logo": "",
-        "profile_url": "https://qdrant.tech/",
-        "details": "Vector similarity search engine"
-    },
-    {
-        "name": "SQL",
-        "icon": "https://img.icons8.com/color/48/000000/sql.png",
-        "color": "#E67E22",
-        "logo": "mysql",
-        "profile_url": "https://github.com/jarif87",
-        "details": "Structured Query Language for database management"
-    },
-    {
-        "name": "NoSQL",
-        "icon": "https://img.icons8.com/color/48/000000/nosql.png",
-        "color": "#4DB33D",
-        "logo": "mongodb",
-        "profile_url": "https://github.com/jarif87",
-        "details": "Non-relational database management systems"
-    },
-    {
-        "name": "PostgreSQL",
-        "icon": "https://img.icons8.com/color/48/000000/postgreesql.png",
-        "color": "#336791",
-        "logo": "postgresql",
-        "profile_url": "https://www.postgresql.org/",
-        "details": "Open-source relational database management system"
-    },
-    {
-        "name": "Reinforcement Learning",
-        "icon": "https://img.icons8.com/color/48/000000/reinforcement-learning.png",
-        "color": "#E74C3C",
-        "logo": "",
-        "profile_url": "https://github.com/jarif87",
-        "details": "Machine learning paradigm for decision-making and control"
-    },
-    {
+        "details": "General-purpose Linux distribution"
+      },
+      {
         "name": "AWS SageMaker",
         "icon": "https://img.icons8.com/color/48/000000/amazon-sagemaker.png",
         "color": "#FF9900",
-        "logo": "amazonaws",
+        "logo": "amazonwebservices",
         "profile_url": "https://aws.amazon.com/sagemaker/",
-        "details": "Fully managed service for building, training, and deploying ML models"
-    },
-    {
+        "details": "Managed ML service on AWS"
+      },
+      {
         "name": "GCP",
         "icon": "https://img.icons8.com/color/48/000000/google-cloud.png",
         "color": "#4285F4",
         "logo": "googlecloud",
         "profile_url": "https://cloud.google.com/",
-        "details": "Google Cloud Platform for machine learning and data analytics"
-    },
-    {
+        "details": "Google Cloud Platform for ML & data"
+      },
+      {
         "name": "Azure",
         "icon": "https://img.icons8.com/color/48/000000/azure.png",
         "color": "#0089D6",
         "logo": "microsoftazure",
         "profile_url": "https://azure.microsoft.com/",
-        "details": "Microsoft Azure cloud platform for ML and data services"
-    }
+        "details": "Microsoft Azure cloud platform"
+      }
+    ]
+  }
 ]
