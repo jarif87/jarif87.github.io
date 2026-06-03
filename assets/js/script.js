@@ -10,14 +10,12 @@ $(document).ready(function () {
     $("#menu").removeClass("fa-times");
     $(".navbar").removeClass("nav-toggle");
 
-    // Scroll top button
     if (window.scrollY > 60) {
       document.querySelector("#scroll-top").classList.add("active");
     } else {
       document.querySelector("#scroll-top").classList.remove("active");
     }
 
-    // Scroll spy
     $("section").each(function () {
       let height = $(this).height();
       let offset = $(this).offset().top - 200;
@@ -35,46 +33,29 @@ $(document).ready(function () {
   $('a[href*="#"]').on("click", function (e) {
     e.preventDefault();
     $("html, body").animate(
-      {
-        scrollTop: $($(this).attr("href")).offset().top,
-      },
+      { scrollTop: $($(this).attr("href")).offset().top },
       500,
       "linear",
     );
   });
 
-  // EmailJS for contact form
-  // Initialize EmailJS on page load
-  // Initialize EmailJS on page load
-  // Initialize EmailJS on page load
-  emailjs.init("5IgxZrnqzRaQtnAhg"); // Your provided Public Key
-
-  // Handle contact form submission
-  // Initialize EmailJS with your public key
-  emailjs.init("cmxo1-ZrPBxZifeuM"); // Your actual EmailJS public key
-
-  // Handle form submission
+  // EmailJS
+  emailjs.init("cmxo1-ZrPBxZifeuM");
   $("#contact-form").submit(function (event) {
     event.preventDefault();
-    console.log("Form submitted, sending via EmailJS...");
-
     const form = this;
-
-    // Send email using the correct service and template IDs
     emailjs.sendForm("service_3dl402w", "template_zqi103p", form).then(
-      function (response) {
-        console.log("SUCCESS!", response.status, response.text);
+      function () {
         form.reset();
         alert("Form Submitted Successfully!");
       },
       function (error) {
-        console.error("FAILED...", error);
         alert("Failed to send message: " + JSON.stringify(error));
       },
     );
   });
 
-  // Typed.js effect for Hero section
+  // Typed.js
   var typed = new Typed(".typing-text", {
     strings: [
       "Machine Learning",
@@ -109,18 +90,18 @@ $(document).ready(function () {
     loop: true,
   });
 
-  // Initialize particles for Connect section
+  // Particles
   particlesJS("connect-particles", {
     particles: {
       number: { value: 50, density: { enable: true, value_area: 800 } },
-      color: { value: "#ffae00" },
+      color: { value: "#06b6d4" },
       shape: { type: "circle" },
       opacity: { value: 0.5, random: true },
       size: { value: 3, random: true },
       line_linked: {
         enable: true,
         distance: 150,
-        color: "#ffd900",
+        color: "#0891b2",
         opacity: 0.4,
         width: 1,
       },
@@ -148,7 +129,7 @@ $(document).ready(function () {
     retina_detect: true,
   });
 
-  // Projects data
+  // ALL 22 PROJECTS — updated with cybersecurity
   const projects = [
     {
       name: "Fraud Detection GNN",
@@ -170,9 +151,7 @@ $(document).ready(function () {
       name: "Brain Tumor Classifier",
       desc: "CNN achieving 96% tumor detection accuracy with treatment recommendations; deployed via Streamlit.",
       category: "Deep Learning, CNNs",
-      links: {
-        code: "https://github.com/jarif87/brain-tumor-diagnosis-tool",
-      },
+      links: { code: "https://github.com/jarif87/brain-tumor-diagnosis-tool" },
     },
     {
       name: "Ethical AI Bias Auditor",
@@ -198,57 +177,55 @@ $(document).ready(function () {
         code: "https://github.com/jarif87/multimodal-ai-mental-health-companion",
       },
     },
-
     {
       name: "Brain Tumor Classifier and Treatment Advisor",
-      desc: "Introducing Brain Tumor Classifier and Treatment Advisor, powered by generative AI and LLM models.",
+      desc: "Powered by generative AI and LLM models for classification and personalized treatment recommendations.",
       category: "LLMs",
       links: {
         code: "https://github.com/jarif87/Brain-Tumor-Classifier-and-Treatment-Advisor",
       },
     },
     {
-      name: "Electrocardiogram Analysis Insights into Heart Health",
-      desc: "Upload an ECG image to receive detailed patient information and diagnosis using LLM and generative AI through Streamlit.",
+      name: "Electrocardiogram Analysis",
+      desc: "Upload an ECG image to receive detailed patient information and diagnosis using LLM and generative AI.",
       category: "LLMs",
       links: {
         code: "https://github.com/jarif87/Electrocardiogram-Analysis-Insights-into-Heart-Health",
       },
     },
     {
-      name: "HealthPredict AI-Powered Disease Forecasting and Medical Aid System",
-      desc: "Enter your disease symptoms to receive accurate disease predictions and detailed diagnostic suggestions powered by LLM and generative AI through Streamlit.",
+      name: "HealthPredict AI-Powered Disease Forecasting",
+      desc: "Enter symptoms to receive accurate disease predictions and detailed diagnostic suggestions powered by LLM.",
       category: "LLMs",
       links: {
         code: "https://github.com/jarif87/Symptoms-to-Disease-Prediction-and-Analysis-System",
       },
     },
     {
-      name: "Geospatial Semantic Search and Interactive Map Display Tool",
-      desc: "Introducing Geospatial Semantic Search and Interactive Map Display Tool, deployed on Hugging Face Spaces.",
-      category: "Huggingface transformer Models",
+      name: "Geospatial Semantic Search Tool",
+      desc: "Semantic search and interactive map display tool deployed on Hugging Face Spaces.",
+      category: "Huggingface Transformer Models",
       links: {
         code: "https://github.com/jarif87/Geospatial-Semantic-Search-and-Interactive-Map-Display-Tool",
       },
     },
-
     {
       name: "Crop Disease Identification",
-      desc: "Explore Crop Disease Identification, where I utilize fastai to classify crop diseases with high accuracy.",
+      desc: "Utilizes fastai to classify crop diseases with high accuracy for agricultural applications.",
       category: "FASTAI",
       links: {
         code: "https://github.com/jarif87/Crop-Disease-Identification_codeclause",
       },
     },
     {
-      name: "Text Summerization",
-      desc: "Text summarization models developed using BLURR and Hugging Face transformers (distilbartcnn-6-6, distilbart-cnn-12-6, and facebook/bart-large-cnn) have been fine-tuned and deployed on HuggingFace.",
-      category: "FASTAI,BLURR",
+      name: "Text Summarization",
+      desc: "Fine-tuned and deployed distilbart and BART models for abstractive text summarization on HuggingFace.",
+      category: "FASTAI, BLURR",
       links: { code: "https://github.com/jarif87/Text-Summarizer" },
     },
     {
-      name: "Movie, TVshow Genre Classification",
-      desc: "Using Python and Selenium, I scraped movie and TV show data from a website. With BLURR, Fastai, and Hugging Face Transformers, I developed a multi-label genre classification model.",
+      name: "Movie & TV Show Genre Classification",
+      desc: "Scraped movie/TV data with Selenium; built multi-label genre classifier with BLURR and Hugging Face.",
       category: "NLP",
       links: {
         code: "https://github.com/jarif87/Movie_Tvshow_Genre_Classification",
@@ -256,61 +233,90 @@ $(document).ready(function () {
     },
     {
       name: "Fruit Recognizer",
-      desc: "I utilized Fastai and ResNet-50 to create a fruit recognition model.",
+      desc: "Computer vision model utilizing Fastai and ResNet-50 for accurate fruit classification.",
       category: "FASTAI",
       links: { code: "https://github.com/jarif87/Fruit-Recognizer" },
     },
-
     {
-      name: "Bangla and English Fake News Detection Using Deep Learning",
-      desc: "This project builds a powerful fake news detection system for Bangla and English using LSTM, GRU, BI-LSTM, and DistilBERT Transformer models.",
+      name: "Bangla & English Fake News Detection",
+      desc: "LSTM, GRU, BI-LSTM, and DistilBERT-based fake news detection for Bangla and English text.",
       category: "Deep Learning",
       links: {
         code: "https://github.com/jarif87/Bangla_English-Fake-News-Detection",
       },
     },
     {
-      name: "Urban Address Numeral Recognition Street View",
-      desc: "This project harnesses Convolutional Neural Networks (CNNs) to precisely predict house number digits from street view images.",
+      name: "Urban Address Numeral Recognition",
+      desc: "CNN-based system to predict house number digits from street view images with high precision.",
       category: "CNNs",
       links: {
         code: "https://www.kaggle.com/code/evilspirit05/streetview-house-number-digit-detector",
       },
     },
-
     {
-      name: "Alzheimer's Stage Classifier EfficientNetB6",
-      desc: "Using the EfficientNetB6 model, this project classifies Alzheimer's disease into five categories.",
-      category: "Deep Learning,CNNs",
+      name: "Alzheimer's Stage Classifier",
+      desc: "EfficientNetB6 model classifying Alzheimer's disease into five progressive categories.",
+      category: "Deep Learning, CNNs",
       links: {
         code: "https://www.kaggle.com/code/evilspirit05/alzheimer-s-stage-classifier-efficientnetb6",
       },
     },
+    {
+      name: "Custom Intrusion Detection System",
+      desc: "Python-based IDS detecting port scans and SSH brute force attacks using Scapy packet sniffing with Wireshark validation.",
+      category: "Cybersecurity, Network Security",
+      links: {
+        code: "https://github.com/jarif87/custom-intrusion-detection-system-ids",
+      },
+    },
+    {
+      name: "Vulnerability Assessment & Penetration Testing",
+      desc: "Full-scale security assessment on Metasploitable environment. Identified FTP backdoor, SQL Injection, and provided hardening recommendations.",
+      category: "Cybersecurity, Penetration Testing",
+      links: {
+        code: "https://github.com/jarif87/vulnerability-assessment-penetration-test-report",
+      },
+    },
+    {
+      name: "Malware Analysis & Reverse Engineering",
+      desc: "Static & dynamic malware analysis with Python automation for metadata extraction, network capture parsing, and custom YARA rule IoC creation.",
+      category: "Cybersecurity, Malware Analysis",
+      links: {
+        code: "https://github.com/jarif87/malware-analysis-and-reverse-engineering",
+      },
+    },
+    {
+      name: "Web Application Security Audit",
+      desc: "End-to-end penetration testing on OWASP Juice Shop identifying XSS, broken access control, and sensitive data exposure with remediation plans.",
+      category: "Cybersecurity, Web Security",
+      links: {
+        code: "https://github.com/jarif87/web-application-security-audit",
+      },
+    },
+    {
+      name: "LogSentinel: Advanced Threat Log Analyzer",
+      desc: "Python-based log analyzer detecting brute-force attacks across Linux/Windows logs with incident timeline reconstruction and cross-platform correlation.",
+      category: "Cybersecurity, Incident Response",
+      links: {
+        code: "https://github.com/jarif87/logsentinel-advanced-threat-log-analyzer",
+      },
+    },
   ];
 
-  // Fetch skills data
-  async function fetchData(type = "skills") {
+  // Fetch skills
+  async function fetchData() {
     try {
       let response = await fetch("skills.json");
-      if (!response.ok) {
-        console.error(`HTTP ${response.status}: Failed to fetch skills.json`);
-        return [];
-      }
-      const data = await response.json();
-      return data;
+      if (!response.ok) return [];
+      return await response.json();
     } catch (error) {
-      console.error("Failed to fetch skills.json:", error);
       return [];
     }
   }
 
-  // Show skills
   function showSkills(data) {
     let skillsContainer = document.getElementById("skillsContainer");
-    if (!skillsContainer) {
-      console.error("skillsContainer not found");
-      return;
-    }
+    if (!skillsContainer) return;
     let skillHTML = "";
     data.forEach((category) => {
       skillHTML += `
@@ -318,26 +324,21 @@ $(document).ready(function () {
             <h3 class="category-title">${category.category}</h3>
             <p class="category-desc">${category.description}</p>
             <div class="category-badges">`;
-
       category.skills.forEach((skill) => {
         const badgeUrl = `https://img.shields.io/badge/-${encodeURIComponent(skill.name)}-${skill.color.replace("#", "")}?style=for-the-badge&logo=${encodeURIComponent(skill.logo || "default")}&logoColor=white`;
         skillHTML += `<a href="${skill.profile_url}" target="_blank" aria-label="${skill.name}">
         <img src="${badgeUrl}" alt="${skill.name}" class="skill-badge" />
     </a>`;
       });
-
       skillHTML += `</div></div>`;
     });
     skillsContainer.innerHTML = skillHTML;
   }
 
-  // Show projects
+  // Show projects on HOME PAGE (only first 6)
   function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");
-    if (!projectsContainer) {
-      console.error("projectsContainer not found");
-      return;
-    }
+    if (!projectsContainer) return;
     let projectHTML = "";
     projects.slice(0, 6).forEach((project) => {
       projectHTML += `
@@ -360,7 +361,6 @@ $(document).ready(function () {
     });
     projectsContainer.innerHTML = projectHTML;
 
-    // VanillaTilt effect
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
       max: 15,
       speed: 400,
@@ -368,7 +368,6 @@ $(document).ready(function () {
       "max-glare": 0.3,
     });
 
-    // ScrollReveal animation
     ScrollReveal().reveal("#work .box", {
       distance: "50px",
       origin: "bottom",
@@ -377,63 +376,33 @@ $(document).ready(function () {
     });
   }
 
-  // Load skills
   fetchData().then((data) => {
-    if (data.length === 0) {
-      console.warn("No skills data loaded. Check skills.json path or content.");
-      return;
-    }
-    showSkills(data);
+    if (data.length) showSkills(data);
   });
 
-  // Load projects
   showProjects(projects);
 
-  // ScrollReveal animations for other sections
+  // ScrollReveal
   const srtop = ScrollReveal({
     origin: "top",
     distance: "80px",
     duration: 1000,
     reset: true,
   });
-
-  /* SCROLL HOME */
   srtop.reveal(".home .content h3", {});
   srtop.reveal(".home .content p", {});
   srtop.reveal(".home .image", {});
-  srtop.reveal(".home .linkedin", {});
-  srtop.reveal(".home .github", {});
-  srtop.reveal(".home .twitter", {});
-  srtop.reveal(".home .telegram", {});
-  srtop.reveal(".home .instagram", {});
-  srtop.reveal(".home .facebook", {});
-
-  /* SCROLL ABOUT */
   srtop.reveal(".about .content h3", {});
   srtop.reveal(".about .content .tag", {});
   srtop.reveal(".about .content p", {});
   srtop.reveal(".about .content .box-container", {});
   srtop.reveal(".about .content .resumebtn", {});
-
-  /* SCROLL SKILLS */
-  //   srtop.reveal(".skills .container", {});
-  //   srtop.reveal(".skills .container .bar", {});
-
-  /* SCROLL EDUCATION */
   srtop.reveal(".education .box", {});
-
-  /* SCROLL PROJECTS */
   srtop.reveal(".work .box", {});
-
-  /* SCROLL EXPERIENCE */
   srtop.reveal(".experience .timeline", {});
   srtop.reveal(".experience .timeline .container", {});
-
-  /* SCROLL CONTACT */
   srtop.reveal(".contact .container", {});
   srtop.reveal(".contact .container .form-group", {});
-
-  /* SCROLL CONNECT */
   srtop.reveal(".connect .box-container", {});
   srtop.reveal(".connect .box", {});
   srtop.reveal(".connect .credit", {});
@@ -452,19 +421,9 @@ document.addEventListener("visibilitychange", function () {
 
 // Disable developer mode
 document.onkeydown = function (e) {
-  if (e.keyCode == 123) {
-    return false;
-  }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
-    return false;
-  }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
-    return false;
-  }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
-    return false;
-  }
-  if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
-    return false;
-  }
+  if (e.keyCode == 123) return false;
+  if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) return false;
+  if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) return false;
+  if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) return false;
+  if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) return false;
 };

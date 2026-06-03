@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  // Mobile menu
   $("#menu").click(function () {
     $(this).toggleClass("fa-times");
     $(".navbar").toggleClass("nav-toggle");
@@ -209,7 +208,10 @@ $(document).ready(function () {
   function getCategories(projects) {
     const cats = new Set();
     projects.forEach((p) => {
-      p.category.split(",").forEach((c) => cats.add(c.trim()));
+      p.category.split(",").forEach((c) => {
+        const trimmed = c.trim();
+        if (trimmed) cats.add(trimmed);
+      });
     });
     return Array.from(cats).sort();
   }
@@ -271,24 +273,47 @@ $(document).ready(function () {
 
     container.innerHTML = html;
 
-    // Bulletproof filtering with CSS class
+    // FILTERING — explicit show/hide with ScrollReveal override
     $("#filters").on("click", "button", function () {
       const filterValue = $(this).attr("data-filter");
       $("#filters .is-checked").removeClass("is-checked");
       $(this).addClass("is-checked");
 
+      const $items = $(".grid-item");
+
       if (filterValue === "*") {
-        $(".grid-item").removeClass("hidden");
+        $items.each(function () {
+          $(this).css({
+            display: "flex",
+            opacity: "1",
+            transform: "none",
+            visibility: "visible",
+          });
+        });
       } else {
-        $(".grid-item").each(function () {
-          const itemCategories = $(this).attr("data-categories") || "";
-          const match = itemCategories.split("|").includes(filterValue);
-          $(this).toggleClass("hidden", !match);
+        $items.each(function () {
+          const cats = ($(this).attr("data-categories") || "").split("|");
+          const isMatch = cats.indexOf(filterValue) !== -1;
+
+          if (isMatch) {
+            // Force visible and override any ScrollReveal inline styles
+            $(this).css({
+              display: "flex",
+              opacity: "1",
+              transform: "none",
+              visibility: "visible",
+            });
+          } else {
+            $(this).css({ display: "none" });
+          }
         });
       }
 
-      const visibleItems = $(".grid-item:not(.hidden)");
-      $(".empty-state").toggle(visibleItems.length === 0);
+      const visibleCount = $(".grid-item").filter(function () {
+        return $(this).css("display") !== "none";
+      }).length;
+
+      $(".empty-state").toggle(visibleCount === 0);
     });
 
     // Tilt effect
@@ -297,17 +322,6 @@ $(document).ready(function () {
       speed: 400,
       glare: false,
       scale: 1.02,
-    });
-
-    // Entrance animation
-    ScrollReveal().reveal(".grid-item", {
-      distance: "30px",
-      origin: "bottom",
-      duration: 700,
-      easing: "cubic-bezier(0.5, 0, 0, 1)",
-      interval: 60,
-      reset: false,
-      viewFactor: 0.1,
     });
   }
 
