@@ -45,7 +45,6 @@
   text-decoration: none;
   outline: none;
   border: none;
-  text-transform: capitalize;
 }
 
 html {
@@ -278,15 +277,6 @@ header .navbar ul li a:hover::after {
   );
   visibility: visible;
   opacity: 1;
-  z-index: 0;
-}
-
-.home #particles-js {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
   z-index: 0;
 }
 
@@ -1416,16 +1406,6 @@ form .button-area {
   overflow: hidden;
   min-height: auto;
   border-top: 1px solid var(--border-cyan);
-}
-
-.connect #connect-particles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  opacity: 0.3;
 }
 
 .connect .box-container {
