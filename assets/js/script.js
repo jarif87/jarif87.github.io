@@ -360,10 +360,7 @@ $(document).ready(function () {
   srtop.reveal(".about .content .resumebtn", {});
   srtop.reveal(".education .box", {});
   srtop.reveal(".work .box", {});
-  srtop.reveal(".experience .timeline", {});
-  srtop.reveal(".experience .timeline .container", {});
-  srtop.reveal(".contact .container", {});
-  srtop.reveal(".contact .container .form-group", {});
+  // REMOVED: Experience & Contact scroll animations (no delay)
   srtop.reveal(".connect .box-container", {});
   srtop.reveal(".connect .box", {});
   srtop.reveal(".connect .credit", {});
