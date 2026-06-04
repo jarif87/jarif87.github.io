@@ -31,26 +31,28 @@
       href="../assets/images/favicon.jpg"
       type="image/x-png"
     />
+    <base target="_blank" />
   </head>
   <body oncontextmenu="return false;">
     <!-- Navbar Starts -->
-    <
     <header>
-      <a href="../index.html" class="logo"
-        ><i class="fas fa-brain"></i> Sadik Al Jarif</a
-      >
+      <a href="../index.html" class="logo">Sadik Al Jarif</a>
       <div id="menu" class="fas fa-bars"></div>
       <nav class="navbar">
         <ul>
-          <li><a href="../index.html#home">Home</a></li>
-          <li><a href="../index.html#about">About</a></li>
-          <li><a href="../index.html#skills">Skills</a></li>
-          <li><a href="../index.html#education">Education</a></li>
-          <li><a href="../index.html#work">Work</a></li>
+          <li><a href="../index.html#home" target="_self">Home</a></li>
+          <li><a href="../index.html#about" target="_self">About</a></li>
+          <li><a href="../index.html#skills" target="_self">Skills</a></li>
           <li>
-            <a class="active" href="../index.html#experience">Experience</a>
+            <a href="../index.html#education" target="_self">Education</a>
           </li>
-          <li><a href="../index.html#contact">Contact</a></li>
+          <li><a href="../index.html#work" target="_self">Work</a></li>
+          <li>
+            <a class="active" href="../index.html#experience" target="_self"
+              >Experience</a
+            >
+          </li>
+          <li><a href="../index.html#contact" target="_self">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -163,62 +165,79 @@
       </div>
     </section>
     <!-- Experience Section Ends -->
-    <!-- Connect Section Starts -->
+    <!-- Connect / Footer Section Starts -->
     <section class="connect" id="connect-section">
-      <div id="connect-particles"></div>
-      <div class="box-container">
-        <div class="box" data-tilt data-tilt-max="5">
-          <h3>Explore the Creative Works of Sadik Al Jarif</h3>
-          <p>
-            Welcome to the world of Sadik Al Jarif where innovation meets
-            imagination. Let's connect, create and launch ideas that leave a
-            mark.
+      <div class="footer-container">
+        <div class="footer-col brand-col">
+          <a href="../index.html" target="_self" class="footer-logo"
+            >Sadik Al Jarif</a
+          >
+          <p class="footer-tagline">
+            AI/ML Engineer & Cybersecurity Practitioner
+          </p>
+          <p class="footer-desc">
+            Building intelligent systems and securing digital infrastructure.
+            Let's collaborate on your next project.
           </p>
         </div>
-        <div class="box" data-tilt data-tilt-max="5">
-          <h3>Quick Links</h3>
-          <div class="quick-links">
-            <a href="../index.html#home">Home</a>
-            <a href="../index.html#about">About</a>
-            <a href="../index.html#skills">Skills</a>
-            <a href="../index.html#education">Education</a>
-            <a href="../index.html#work">Work</a>
-            <a href="../index.html#experience">Experience</a>
+
+        <div class="footer-col links-col">
+          <h5>Quick Links</h5>
+          <div class="footer-links">
+            <a href="../index.html#home" target="_self">Home</a>
+            <a href="../index.html#about" target="_self">About</a>
+            <a href="../index.html#skills" target="_self">Skills</a>
+            <a href="../index.html#education" target="_self">Education</a>
+            <a href="../index.html#work" target="_self">Work</a>
+            <a href="../index.html#experience" target="_self">Experience</a>
+            <a href="../index.html#contact" target="_self">Contact</a>
           </div>
         </div>
-        <div class="box" data-tilt data-tilt-max="5">
-          <h3>Contact Info</h3>
-          <div class="contact-info">
-            <p><i class="fas fa-phone"></i> +8801686518462</p>
-            <p><i class="fas fa-envelope"></i> sadikaljarif05@gmail.com</p>
-            <p><i class="fas fa-map-marked-alt"></i> Dhaka, Bangladesh-1216</p>
-          </div>
-          <div class="share">
+
+        <div class="footer-col contact-col">
+          <h5>Contact Info</h5>
+          <ul class="footer-contact-list">
+            <li><i class="fas fa-phone-alt"></i><span>+8801686518462</span></li>
+            <li>
+              <i class="fas fa-envelope"></i
+              ><span>sadikaljarif05@gmail.com</span>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i
+              ><span>Dhaka, Bangladesh-1216</span>
+            </li>
+          </ul>
+          <div class="footer-socials">
             <a
               href="https://www.linkedin.com/in/sadikaljarif/"
-              class="fab fa-linkedin"
-              aria-label="LinkedIn"
               target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
             ></a>
             <a
               href="https://github.com/jarif87"
-              class="fab fa-github"
-              aria-label="GitHub"
               target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
             ></a>
-
             <a
               href="https://x.com/jarif84112354"
-              class="fab fa-twitter"
-              aria-label="Twitter"
               target="_blank"
+              rel="noopener"
+              aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
             ></a>
           </div>
         </div>
       </div>
-      <h1 class="credit">Engineered by Sadik Al Jarif · 2026</h1>
+
+      <div class="footer-bar">
+        <p>Designed & Built by <strong>Sadik Al Jarif</strong> · © 2026</p>
+      </div>
     </section>
-    <!-- Connect Section Ends -->
+    <!-- Connect / Footer Section Ends -->
     <!-- Scroll Top Button -->
     <a
       href="#experience"
