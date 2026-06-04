@@ -425,6 +425,7 @@ header .navbar ul li a:hover::after {
 ============================================================ */
 .about {
   background: linear-gradient(to bottom, #ffffff, var(--bg-about));
+  min-height: auto !important;
 }
 
 .about .row {
@@ -1002,8 +1003,8 @@ header .navbar ul li a:hover::after {
     var(--bg-experience) 50%,
     var(--bg-home) 100%
   );
-  padding: 7rem 9%;
-  min-height: 100vh;
+  padding: 4rem 9% 5rem !important;
+  min-height: auto !important;
   position: relative;
   overflow: hidden;
 }
