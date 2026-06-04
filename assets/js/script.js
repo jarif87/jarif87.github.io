@@ -358,9 +358,10 @@ $(document).ready(function () {
   srtop.reveal(".about .content p", {});
   srtop.reveal(".about .content .box-container", {});
   srtop.reveal(".about .content .resumebtn", {});
-  srtop.reveal(".education .box", {});
+  // REMOVED: Education delay removed
   srtop.reveal(".work .box", {});
-  // REMOVED: Experience & Contact scroll animations (no delay)
+  // REMOVED: Experience delay removed
+  // REMOVED: Contact delay removed
   srtop.reveal(".connect .box-container", {});
   srtop.reveal(".connect .box", {});
   srtop.reveal(".connect .credit", {});
