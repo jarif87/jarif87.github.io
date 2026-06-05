@@ -374,6 +374,6 @@ document.addEventListener("visibilitychange", function () {
     $("#favicon").attr("href", "/assets/images/favicon.jpg");
   } else {
     document.title = "Come Back To Portfolio";
-    $("#favicon").attr("href", "/assets/images/favhand.jpg");
+    $("#favicon").attr("href", "/assets/images/favhand.png");
   }
 });

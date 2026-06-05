@@ -1624,12 +1624,14 @@ form .button-area {
   padding: 1.8rem 6%;
   text-align: center;
   margin-top: 0;
-  background: rgba(236, 254, 255, 0.8);
+  /* background: rgba(236, 254, 255, 0.8); */
+  background: rgba(6, 20, 30, 0.95);
 }
 
 .footer-bar p {
   font-size: 1.3rem;
-  color: var(--text-muted);
+  /* color: var(--text-muted); */
+  color: rgba(203, 213, 225, 0.9);
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   letter-spacing: 0.3px;
